@@ -1385,3 +1385,148 @@ Processing by TeamsController#show as HTML
 Completed 200 OK in 81ms (Views: 61.2ms | ActiveRecord: 0.9ms)
 
 
+Started GET "/" for 127.0.0.1 at 2017-11-14 16:37:46 -0500
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by TeamsController#index as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering teams/index.html.erb within layouts/application
+  [1m[36mTeam Load (0.5ms)[0m  [1m[34mSELECT "teams".* FROM "teams"[0m
+  Rendered teams/index.html.erb within layouts/application (17.5ms)
+Completed 200 OK in 407ms (Views: 355.3ms | ActiveRecord: 8.2ms)
+
+
+Started GET "/teams/1/edit" for 127.0.0.1 at 2017-11-14 16:37:52 -0500
+Processing by TeamsController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (30.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mTeam Load (0.7ms)[0m  [1m[34mSELECT  "teams".* FROM "teams" WHERE "teams"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering teams/edit.html.erb within layouts/application
+  Rendered teams/_form.html.erb (30.0ms)
+  Rendered teams/edit.html.erb within layouts/application (36.2ms)
+Completed 200 OK in 134ms (Views: 71.3ms | ActiveRecord: 45.0ms)
+
+
+Started PATCH "/teams/1" for 127.0.0.1 at 2017-11-14 16:38:21 -0500
+Processing by TeamsController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"Qm90ptAEiuYYxDGN20sYxzZHDNV/bKctTOKQVnHp+fLN9YCpEYr1hffn+CvRbR/geH5l1uuT9MMNqLT289kWJA==", "team"=>{"team"=>"Preston North End", "flag"=>"PNE_FC.png", "founded"=>"1880", "moments"=>"https://www.youtube.com/watch?v=Sek8FbRQKw0"}, "commit"=>"Update Team", "id"=>"1"}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mTeam Load (0.3ms)[0m  [1m[34mSELECT  "teams".* FROM "teams" WHERE "teams"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (14.1ms)[0m  [1m[33mUPDATE "teams" SET "flag" = $1, "updated_at" = $2 WHERE "teams"."id" = $3[0m  [["flag", "PNE_FC.png"], ["updated_at", "2017-11-14 21:38:21.419006"], ["id", 1]]
+  [1m[35m (9.8ms)[0m  [1m[35mCOMMIT[0m
+Redirected to http://localhost:3000/teams/1
+Completed 302 Found in 34ms (ActiveRecord: 24.8ms)
+
+
+Started GET "/teams/1" for 127.0.0.1 at 2017-11-14 16:38:21 -0500
+Processing by TeamsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mTeam Load (0.4ms)[0m  [1m[34mSELECT  "teams".* FROM "teams" WHERE "teams"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering teams/show.html.erb within layouts/application
+  Rendered teams/show.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 36ms (Views: 27.3ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/teams" for 127.0.0.1 at 2017-11-14 16:38:38 -0500
+Processing by TeamsController#index as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering teams/index.html.erb within layouts/application
+  [1m[36mTeam Load (14.1ms)[0m  [1m[34mSELECT "teams".* FROM "teams"[0m
+  Rendered teams/index.html.erb within layouts/application (18.3ms)
+Completed 200 OK in 74ms (Views: 54.2ms | ActiveRecord: 14.5ms)
+
+
+Started DELETE "/teams/2" for 127.0.0.1 at 2017-11-14 16:38:44 -0500
+Processing by TeamsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"G+wrayIN4y5iFXzIPdBaBkCXDcMM7ur2kJANrh2yBgHa4m95T6e8IU8Zi/MJiQzLa9Q1zbK4YyIoWjEokmlXsw==", "id"=>"2"}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mTeam Load (0.4ms)[0m  [1m[34mSELECT  "teams".* FROM "teams" WHERE "teams"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.5ms)[0m  [1m[31mDELETE FROM "teams" WHERE "teams"."id" = $1[0m  [["id", 2]]
+  [1m[35m (6.2ms)[0m  [1m[35mCOMMIT[0m
+Redirected to http://localhost:3000/teams
+Completed 302 Found in 13ms (ActiveRecord: 7.8ms)
+
+
+Started GET "/teams" for 127.0.0.1 at 2017-11-14 16:38:44 -0500
+Processing by TeamsController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering teams/index.html.erb within layouts/application
+  [1m[36mTeam Load (0.3ms)[0m  [1m[34mSELECT "teams".* FROM "teams"[0m
+  Rendered teams/index.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 35ms (Views: 29.5ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/teams/new" for 127.0.0.1 at 2017-11-14 16:38:46 -0500
+Processing by TeamsController#new as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering teams/new.html.erb within layouts/application
+  Rendered teams/_form.html.erb (5.9ms)
+  Rendered teams/new.html.erb within layouts/application (14.1ms)
+Completed 200 OK in 76ms (Views: 68.5ms | ActiveRecord: 0.3ms)
+
+
+Started POST "/teams" for 127.0.0.1 at 2017-11-14 16:39:25 -0500
+Processing by TeamsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"1J5hmwaMaaBO2uV46L/D4CgfNUqHnrsh7K4NEYUd4FUAjOOcieZaPF7mbXW1SnF8J7bMDrp7sfe3Xf9iJDGVHw==", "team"=>{"team"=>"New York Red Bulls", "flag"=>"https://en.wikipedia.org/wiki/File:New_York_Red_Bulls_logo.svg", "founded"=>"1994", "moments"=>"https://www.youtube.com/watch?v=9SL3Yuu8DKs"}, "commit"=>"Create Team"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (11.2ms)[0m  [1m[32mINSERT INTO "teams" ("team", "flag", "founded", "moments", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["team", "New York Red Bulls"], ["flag", "https://en.wikipedia.org/wiki/File:New_York_Red_Bulls_logo.svg"], ["founded", "1994"], ["moments", "https://www.youtube.com/watch?v=9SL3Yuu8DKs"], ["created_at", "2017-11-14 21:39:25.905664"], ["updated_at", "2017-11-14 21:39:25.905664"]]
+  [1m[35m (1.5ms)[0m  [1m[35mCOMMIT[0m
+Redirected to http://localhost:3000/teams/3
+Completed 302 Found in 34ms (ActiveRecord: 13.2ms)
+
+
+Started GET "/teams/3" for 127.0.0.1 at 2017-11-14 16:39:25 -0500
+Processing by TeamsController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mTeam Load (0.4ms)[0m  [1m[34mSELECT  "teams".* FROM "teams" WHERE "teams"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  Rendering teams/show.html.erb within layouts/application
+  Rendered teams/show.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 56ms (Views: 47.8ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/teams" for 127.0.0.1 at 2017-11-14 16:39:29 -0500
+Processing by TeamsController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering teams/index.html.erb within layouts/application
+  [1m[36mTeam Load (15.2ms)[0m  [1m[34mSELECT "teams".* FROM "teams"[0m
+  Rendered teams/index.html.erb within layouts/application (18.8ms)
+Completed 200 OK in 92ms (Views: 69.8ms | ActiveRecord: 15.6ms)
+
+
+Started DELETE "/logout" for 127.0.0.1 at 2017-11-14 16:40:34 -0500
+Processing by SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"L23pr59qCqj1TLvBTYtv7pnzNE+I/K7PrgKPMZiW4D/uY6298sBVp9hATPp50jkjsrAMQTaqJxsWyLO3F02xjQ=="}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+Redirected to http://localhost:3000/login
+Completed 302 Found in 2ms (ActiveRecord: 0.2ms)
+
+
+Started GET "/login" for 127.0.0.1 at 2017-11-14 16:40:34 -0500
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (10.6ms)
+Completed 200 OK in 77ms (Views: 69.5ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/login" for 127.0.0.1 at 2017-11-14 16:40:46 -0500
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"vcGGOc3fCfT/D8NAUxxA9JrBe5TkeJvx/DiTFA1zKEN8z8IroHVW+9IDNHtnRRY5sYJDmlouEiVE8q+Sgqh58Q==", "session"=>{"email"=>"rohtaswadera@gmail.com", "password"=>"[FILTERED]"}, "commit"=>"Log In"}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "rohtaswadera@gmail.com"], ["LIMIT", 1]]
+Redirected to http://localhost:3000/users/1
+Completed 302 Found in 78ms (ActiveRecord: 0.4ms)
+
+
+Started GET "/users/1" for 127.0.0.1 at 2017-11-14 16:40:46 -0500
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering users/show.html.erb within layouts/application
+  Rendered users/show.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 44ms (Views: 33.6ms | ActiveRecord: 0.8ms)
+
+

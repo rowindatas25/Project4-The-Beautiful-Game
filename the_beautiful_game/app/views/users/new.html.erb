@@ -1,5 +1,6 @@
 <h1>Create Your Account</h1>
 
+<div class="user_form">
 <%= form_for (@user) do |form| %>
 <%= form.label :name %> <br>
 <%= form.text_field :name %> <br><br>
@@ -12,8 +13,10 @@
 <%= form.label :password %> <br>
 <%= form.password_field :password %> <br><br>
 
-<%= form.label :password_Confirmation %> <br>
+<%= form.label :password_confirmation %> <br>
 <%= form.password_field :password_confirmation %> <br><br>
 
 <%= form.submit("Create Your Account") %>
 <% end %>
+
+</div>

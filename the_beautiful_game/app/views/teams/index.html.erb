@@ -1,0 +1,11 @@
+<span><%= link_to 'New Team', new_team_path%></span>
+<% @teams.each do |team|%>
+
+<h4>Crest: <%= team.flag %></h4>
+<h3><%= link_to team.team, team_path(team) %></h3>
+<p>Founded: <%= team.founded %></p>
+<p>Favorite Moments: <%= team.moments %></p>
+<p><%= link_to('Edit team', "/teams/#{team.id}/edit") %></p>
+<p><%= link_to 'Delete Team', team, :method => 'delete' %></p>
+
+<% end %>

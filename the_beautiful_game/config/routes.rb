@@ -3,6 +3,7 @@ Rails.application.routes.draw do
   root "teams#index"
 
   resources :teams
+ 
 
   get "/signup", to: "users#new", as: :signup
   post "/users", to: "users#create"
@@ -11,6 +12,9 @@ Rails.application.routes.draw do
   get "/login", to: "sessions#new", as: :login
   post "/login", to: "sessions#create"
   delete "logout", to: "sessions#destroy", as: :logout
+
+  get "/profiles", to: "users#show"
+
 
 
 end

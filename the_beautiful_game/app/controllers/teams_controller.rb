@@ -6,7 +6,7 @@ class TeamsController < ApplicationController
 	
 	
 	def index
-		@teams = Team.all
+		
 		url = "http://soccer.sportsopendata.net/v1/leagues/serie-a/seasons/17-18/teams"
 		response = HTTParty.get(url)
 		data = JSON.parse(response.body)
@@ -25,7 +25,7 @@ class TeamsController < ApplicationController
 
 		end
 
-		@teams = Team.all	
+		
 		url_prem = "http://soccer.sportsopendata.net/v1/leagues/premier-league/seasons/17-18/teams"
 		response_prem = HTTParty.get(url_prem)
 		data_prem = JSON.parse(response_prem.body)
@@ -43,7 +43,7 @@ class TeamsController < ApplicationController
 		end
 
 
-		@teams = Team.all	
+		
 		url_ligue = "http://soccer.sportsopendata.net/v1/leagues/ligue1/seasons/17-18/teams"
 		response_ligue = HTTParty.get(url_ligue)
 		data_ligue = JSON.parse(response_ligue.body)
@@ -61,7 +61,7 @@ class TeamsController < ApplicationController
 			}
 		end
 
-		@teams = Team.all	
+		
 		url_bund = "http://soccer.sportsopendata.net/v1/leagues/bundesliga/seasons/17-18/teams"
 		response_bund = HTTParty.get(url_bund)
 		data_bund = JSON.parse(response_bund.body)
@@ -78,7 +78,7 @@ class TeamsController < ApplicationController
 			}
 		end
 
-		@teams = Team.all	
+		
 		url_liga = "http://soccer.sportsopendata.net/v1/leagues/liga/seasons/17-18/teams"
 		response_liga = HTTParty.get(url_liga)
 		data_liga = JSON.parse(response_liga.body)
@@ -95,12 +95,13 @@ class TeamsController < ApplicationController
 			}
 		end
 
-	
+		@teams = Team.all	
 
 	end
 
 	def show 
 		@team = Team.find(params[:id])
+
 	end
 
 	def new

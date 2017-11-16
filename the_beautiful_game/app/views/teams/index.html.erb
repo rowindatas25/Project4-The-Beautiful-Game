@@ -1,5 +1,25 @@
 <span><%= link_to 'Add Team', new_team_path%></span>
 
+
+
+<% @teams.each do |team|%>
+
+
+<div class="bundesliga">
+
+<h3><%= link_to(team[:team], team_path(team) ) %></h3>
+<h3> <%= image_tag team[:flag] %></h3>
+
+<p>Founded: <%=  team[:founded] %></p>
+
+
+<p><%= link_to 'Delete Team', team, :method => 'delete' %></p>
+</div>
+
+
+<% end %>
+
+
 <h2>Premier League </h2>
 
 
@@ -8,9 +28,9 @@
 
 
 
-
+<%= teams_prem %>
 <div class="premier">
-<h3><%= link_to(teams_prem[:prem_name], teams_prem ) %></h3>
+<h3><%= link_to(teams_prem[:prem_name], team_path(@teams) ) %></h3>
 <h3> <%=  image_tag teams_prem[:prem_flag] %></h3>
 
 <p>Founded: <%=  teams_prem[:prem_founded] %></p>

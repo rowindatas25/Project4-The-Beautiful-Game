@@ -1,11 +1,107 @@
-<span><%= link_to 'New Team', new_team_path%></span>
-<% @teams.each do |team|%>
+<span><%= link_to 'Add Team', new_team_path%></span>
 
-<h4>Crest: <%= team.flag %></h4>
-<h3><%= link_to team.team, team_path(team) %></h3>
-<p>Founded: <%= team.founded %></p>
-<p>Favorite Moments: <%= team.moments %></p>
-<p><%= link_to('Edit team', "/teams/#{team.id}/edit") %></p>
-<p><%= link_to 'Delete Team', team, :method => 'delete' %></p>
+<h2>Premier League </h2>
+
+
+
+<% @soccer_data_prem.each do |teams_prem|%>
+
+
+
+
+<div class="premier">
+<h3><%= link_to(teams_prem[:prem_name], teams_prem ) %></h3>
+<h3> <%=  image_tag teams_prem[:prem_flag] %></h3>
+
+<p>Founded: <%=  teams_prem[:prem_founded] %></p>
+
+
+<p><%= link_to 'Delete Team', teams_prem, :method => 'delete' %></p>
+</div>
 
 <% end %>
+
+<h2>La Liga</h2>
+
+<% @soccer_data_liga.each do |teams_liga|%>
+
+
+
+
+<div class="liga">
+<h3><%= link_to(teams_liga[:liga_name], teams_liga ) %></h3>
+<h3> <%=  image_tag teams_liga[:liga_flag] %></h3>
+
+<p>Founded: <%=  teams_liga[:liga_founded] %></p>
+
+
+<p><%= link_to 'Delete Team', teams_liga, :method => 'delete' %></p>
+</div>
+
+<% end %>
+
+<h2>Serie A </h2>
+
+<% @soccer_data.each do |teams|%>
+
+
+<div class="serie-a">
+<h3><%= link_to(teams[:name], @team ) %></h3>
+<h3> <%= image_tag teams[:flag] %></h3>
+
+<p>Founded: <%=  teams[:founded] %></p>
+
+
+<p><%= link_to 'Delete Team', teams, :method => 'delete' %></p>
+</div>
+
+
+<% end %>
+
+
+<h2>Ligue 1</h2>
+
+<% @soccer_data_ligue.each do |teams_ligue|%>
+
+
+<div class="ligue-1">
+<h3><%= link_to(teams_ligue[:ligue_name], teams_ligue ) %></h3>
+<h3> <%= image_tag teams_ligue[:ligue_flag] %></h3>
+
+<p>Founded: <%=  teams_ligue[:ligue_founded] %></p>
+
+
+<p><%= link_to 'Delete Team', teams_ligue, :method => 'delete' %></p>
+</div>
+
+
+<% end %>
+
+<h2>Bundesliga</h2>
+
+
+<% @soccer_data_bund.each do |teams_bund|%>
+
+
+<div class="bundesliga">
+<h3><%= link_to(teams_bund[:bund_name], teams_bund ) %></h3>
+<h3> <%= image_tag teams_bund[:bund_flag] %></h3>
+
+<p>Founded: <%=  teams_bund[:bund_founded] %></p>
+
+
+<p><%= link_to 'Delete Team', teams_bund, :method => 'delete' %></p>
+</div>
+
+
+<% end %>
+
+
+
+
+
+
+
+
+
+

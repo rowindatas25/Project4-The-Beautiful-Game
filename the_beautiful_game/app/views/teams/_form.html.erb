@@ -1,6 +1,6 @@
 <%= form_for @team do |form| %>
 	Team: <%= form.text_field :team %></br>
-	Crest: <%= form.text_field :flag %></br>
+	Crest: <%= form.file_field :flag %></br>
 	Founded: <%= form.text_field :founded %></br>
 	Favorite Moments: <%= form.text_field :moments %></br>
 	<%= form.submit %>

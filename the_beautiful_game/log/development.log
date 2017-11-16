@@ -31564,3 +31564,843 @@ Completed 200 OK in 1526ms (Views: 32.3ms | ActiveRecord: 0.3ms)
 
 
   [1m[36mTeam Load (0.4ms)[0m  [1m[34mSELECT  "teams".* FROM "teams" LIMIT $1[0m  [["LIMIT", 11]]
+Started GET "/teams" for 127.0.0.1 at 2017-11-16 12:01:08 -0500
+  [1m[35m (8.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.6ms)[0m  [1m[32mINSERT INTO "teams" ("team", "team_id", "flag", "founded", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["team", "Atalanta"], ["team_id", 8], ["flag", "http://soccer.sportsopendata.net/logos/italy/atalanta.png"], ["founded", "1907"], ["created_at", "2017-11-16 17:01:09.724908"], ["updated_at", "2017-11-16 17:01:09.724908"]]
+  [1m[35m (3.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "teams" ("team", "team_id", "flag", "founded", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["team", "Benevento"], ["team_id", 0], ["flag", "http://soccer.sportsopendata.net/logos/italy/benevento.png"], ["founded", "1929"], ["created_at", "2017-11-16 17:01:09.731404"], ["updated_at", "2017-11-16 17:01:09.731404"]]
+  [1m[35m (1.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "teams" ("team", "team_id", "flag", "founded", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["team", "Bologna"], ["team_id", 1577], ["flag", "http://soccer.sportsopendata.net/logos/italy/bologna.png"], ["founded", "1909"], ["created_at", "2017-11-16 17:01:09.734934"], ["updated_at", "2017-11-16 17:01:09.734934"]]
+  [1m[35m (1.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "teams" ("team", "team_id", "flag", "founded", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["team", "Cagliari"], ["team_id", 0], ["flag", "http://soccer.sportsopendata.net/logos/italy/cagliari.png"], ["founded", "1920"], ["created_at", "2017-11-16 17:01:09.738934"], ["updated_at", "2017-11-16 17:01:09.738934"]]
+  [1m[35m (1.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "teams" ("team", "team_id", "flag", "founded", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["team", "Chievo"], ["team_id", 73], ["flag", "http://soccer.sportsopendata.net/logos/italy/chievo.png"], ["founded", "1929"], ["created_at", "2017-11-16 17:01:09.742748"], ["updated_at", "2017-11-16 17:01:09.742748"]]
+  [1m[35m (1.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "teams" ("team", "team_id", "flag", "founded", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["team", "Crotone"], ["team_id", 8], ["flag", "http://soccer.sportsopendata.net/logos/italy/crotone.png"], ["founded", "1910"], ["created_at", "2017-11-16 17:01:09.746526"], ["updated_at", "2017-11-16 17:01:09.746526"]]
+  [1m[35m (1.5ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "teams" ("team", "team_id", "flag", "founded", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["team", "Fiorentina"], ["team_id", 1], ["flag", "http://soccer.sportsopendata.net/logos/italy/fiorentina.png"], ["founded", "1926"], ["created_at", "2017-11-16 17:01:09.750425"], ["updated_at", "2017-11-16 17:01:09.750425"]]
+  [1m[35m (1.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "teams" ("team", "team_id", "flag", "founded", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["team", "Genoa"], ["team_id", 0], ["flag", "http://soccer.sportsopendata.net/logos/italy/genoa.png"], ["founded", "1893"], ["created_at", "2017-11-16 17:01:09.753838"], ["updated_at", "2017-11-16 17:01:09.753838"]]
+  [1m[35m (1.5ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "teams" ("team", "team_id", "flag", "founded", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["team", "Inter"], ["team_id", 691], ["flag", "http://soccer.sportsopendata.net/logos/italy/inter.png"], ["founded", "1908"], ["created_at", "2017-11-16 17:01:09.757554"], ["updated_at", "2017-11-16 17:01:09.757554"]]
+  [1m[35m (1.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "teams" ("team", "team_id", "flag", "founded", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["team", "Juventus"], ["team_id", 0], ["flag", "http://soccer.sportsopendata.net/logos/italy/juventus.png"], ["founded", "1897"], ["created_at", "2017-11-16 17:01:09.761378"], ["updated_at", "2017-11-16 17:01:09.761378"]]
+  [1m[35m (1.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.6ms)[0m  [1m[32mINSERT INTO "teams" ("team", "team_id", "flag", "founded", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["team", "Lazio"], ["team_id", 6], ["flag", "http://soccer.sportsopendata.net/logos/italy/lazio.png"], ["founded", "1900"], ["created_at", "2017-11-16 17:01:09.765931"], ["updated_at", "2017-11-16 17:01:09.765931"]]
+  [1m[35m (1.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "teams" ("team", "team_id", "flag", "founded", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["team", "Milan"], ["team_id", 792851482], ["flag", "http://soccer.sportsopendata.net/logos/italy/milan.png"], ["founded", "1899"], ["created_at", "2017-11-16 17:01:09.770445"], ["updated_at", "2017-11-16 17:01:09.770445"]]
+  [1m[35m (1.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "teams" ("team", "team_id", "flag", "founded", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["team", "Napoli"], ["team_id", 0], ["flag", "http://soccer.sportsopendata.net/logos/italy/napoli.png"], ["founded", "1926"], ["created_at", "2017-11-16 17:01:09.774659"], ["updated_at", "2017-11-16 17:01:09.774659"]]
+  [1m[35m (1.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "teams" ("team", "team_id", "flag", "founded", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["team", "Roma"], ["team_id", 23], ["flag", "http://soccer.sportsopendata.net/logos/italy/roma.png"], ["founded", "1927"], ["created_at", "2017-11-16 17:01:09.778137"], ["updated_at", "2017-11-16 17:01:09.778137"]]
+  [1m[35m (1.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "teams" ("team", "team_id", "flag", "founded", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["team", "Sampdoria"], ["team_id", 2018394], ["flag", "http://soccer.sportsopendata.net/logos/italy/sampdoria.png"], ["founded", "1946"], ["created_at", "2017-11-16 17:01:09.782132"], ["updated_at", "2017-11-16 17:01:09.782132"]]
+  [1m[35m (1.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "teams" ("team", "team_id", "flag", "founded", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["team", "Sassuolo"], ["team_id", 0], ["flag", "http://soccer.sportsopendata.net/logos/italy/sassuolo.png"], ["founded", "1920"], ["created_at", "2017-11-16 17:01:09.785794"], ["updated_at", "2017-11-16 17:01:09.785794"]]
+  [1m[35m (1.5ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "teams" ("team", "team_id", "flag", "founded", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["team", "Spal"], ["team_id", 0], ["flag", "http://soccer.sportsopendata.net/logos/italy/spal.png"], ["founded", "1907"], ["created_at", "2017-11-16 17:01:09.789518"], ["updated_at", "2017-11-16 17:01:09.789518"]]
+  [1m[35m (1.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.5ms)[0m  [1m[32mINSERT INTO "teams" ("team", "team_id", "flag", "founded", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["team", "Torino"], ["team_id", 0], ["flag", "http://soccer.sportsopendata.net/logos/italy/torino.png"], ["founded", "1906"], ["created_at", "2017-11-16 17:01:09.792966"], ["updated_at", "2017-11-16 17:01:09.792966"]]
+  [1m[35m (1.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "teams" ("team", "team_id", "flag", "founded", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["team", "Udinese"], ["team_id", 54], ["flag", "http://soccer.sportsopendata.net/logos/italy/udinese.png"], ["founded", "1896"], ["created_at", "2017-11-16 17:01:09.796643"], ["updated_at", "2017-11-16 17:01:09.796643"]]
+  [1m[35m (1.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "teams" ("team", "team_id", "flag", "founded", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["team", "Verona"], ["team_id", 0], ["flag", "http://soccer.sportsopendata.net/logos/italy/hellas.png"], ["founded", "1903"], ["created_at", "2017-11-16 17:01:09.800255"], ["updated_at", "2017-11-16 17:01:09.800255"]]
+  [1m[35m (1.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.7ms)[0m  [1m[32mINSERT INTO "teams" ("team", "team_id", "flag", "founded", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["team", "Arsenal"], ["team_id", 0], ["flag", ""], ["founded", "1886"], ["created_at", "2017-11-16 17:01:10.107085"], ["updated_at", "2017-11-16 17:01:10.107085"]]
+  [1m[35m (1.8ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.5ms)[0m  [1m[32mINSERT INTO "teams" ("team", "team_id", "flag", "founded", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["team", "Bournemouth"], ["team_id", 0], ["flag", ""], ["founded", "1899"], ["created_at", "2017-11-16 17:01:10.113277"], ["updated_at", "2017-11-16 17:01:10.113277"]]
+  [1m[35m (1.5ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.6ms)[0m  [1m[32mINSERT INTO "teams" ("team", "team_id", "flag", "founded", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["team", "Brighton & Hove Albion"], ["team_id", 0], ["flag", ""], ["founded", ""], ["created_at", "2017-11-16 17:01:10.118399"], ["updated_at", "2017-11-16 17:01:10.118399"]]
+  [1m[35m (1.7ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.6ms)[0m  [1m[32mINSERT INTO "teams" ("team", "team_id", "flag", "founded", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["team", "Burnley"], ["team_id", 4], ["flag", ""], ["founded", "1882"], ["created_at", "2017-11-16 17:01:10.123806"], ["updated_at", "2017-11-16 17:01:10.123806"]]
+  [1m[35m (1.7ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.6ms)[0m  [1m[32mINSERT INTO "teams" ("team", "team_id", "flag", "founded", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["team", "Chelsea"], ["team_id", 0], ["flag", ""], ["founded", "1905"], ["created_at", "2017-11-16 17:01:10.129026"], ["updated_at", "2017-11-16 17:01:10.129026"]]
+  [1m[35m (1.5ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.6ms)[0m  [1m[32mINSERT INTO "teams" ("team", "team_id", "flag", "founded", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["team", "Crystal Palace"], ["team_id", 0], ["flag", ""], ["founded", "1905"], ["created_at", "2017-11-16 17:01:10.134291"], ["updated_at", "2017-11-16 17:01:10.134291"]]
+  [1m[35m (1.6ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (9.0ms)[0m  [1m[32mINSERT INTO "teams" ("team", "team_id", "flag", "founded", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["team", "Everton"], ["team_id", 0], ["flag", ""], ["founded", "1878"], ["created_at", "2017-11-16 17:01:10.139734"], ["updated_at", "2017-11-16 17:01:10.139734"]]
+  [1m[35m (1.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.5ms)[0m  [1m[32mINSERT INTO "teams" ("team", "team_id", "flag", "founded", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["team", "Huddersfield Town"], ["team_id", 8], ["flag", ""], ["founded", ""], ["created_at", "2017-11-16 17:01:10.153019"], ["updated_at", "2017-11-16 17:01:10.153019"]]
+  [1m[35m (1.5ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "teams" ("team", "team_id", "flag", "founded", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["team", "Leicester City"], ["team_id", 0], ["flag", ""], ["founded", "1884"], ["created_at", "2017-11-16 17:01:10.157887"], ["updated_at", "2017-11-16 17:01:10.157887"]]
+  [1m[35m (1.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "teams" ("team", "team_id", "flag", "founded", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["team", "Liverpool"], ["team_id", 0], ["flag", ""], ["founded", "1892"], ["created_at", "2017-11-16 17:01:10.165026"], ["updated_at", "2017-11-16 17:01:10.165026"]]
+  [1m[35m (1.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "teams" ("team", "team_id", "flag", "founded", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["team", "Man City"], ["team_id", 0], ["flag", ""], ["founded", "1880"], ["created_at", "2017-11-16 17:01:10.168509"], ["updated_at", "2017-11-16 17:01:10.168509"]]
+  [1m[35m (1.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "teams" ("team", "team_id", "flag", "founded", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["team", "Man United"], ["team_id", 0], ["flag", ""], ["founded", "1878"], ["created_at", "2017-11-16 17:01:10.172487"], ["updated_at", "2017-11-16 17:01:10.172487"]]
+  [1m[35m (1.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "teams" ("team", "team_id", "flag", "founded", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["team", "Newcastle"], ["team_id", 0], ["flag", ""], ["founded", ""], ["created_at", "2017-11-16 17:01:10.176256"], ["updated_at", "2017-11-16 17:01:10.176256"]]
+  [1m[35m (1.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "teams" ("team", "team_id", "flag", "founded", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["team", "Southampton"], ["team_id", 0], ["flag", ""], ["founded", "1885"], ["created_at", "2017-11-16 17:01:10.179751"], ["updated_at", "2017-11-16 17:01:10.179751"]]
+  [1m[35m (1.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "teams" ("team", "team_id", "flag", "founded", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["team", "Stoke City"], ["team_id", 0], ["flag", ""], ["founded", "1863"], ["created_at", "2017-11-16 17:01:10.183318"], ["updated_at", "2017-11-16 17:01:10.183318"]]
+  [1m[35m (1.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "teams" ("team", "team_id", "flag", "founded", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["team", "Swansea City"], ["team_id", 0], ["flag", ""], ["founded", "1912"], ["created_at", "2017-11-16 17:01:10.186856"], ["updated_at", "2017-11-16 17:01:10.186856"]]
+  [1m[35m (1.5ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "teams" ("team", "team_id", "flag", "founded", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["team", "Tottenham"], ["team_id", 0], ["flag", ""], ["founded", "1882"], ["created_at", "2017-11-16 17:01:10.190967"], ["updated_at", "2017-11-16 17:01:10.190967"]]
+  [1m[35m (1.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (2.5ms)[0m  [1m[32mINSERT INTO "teams" ("team", "team_id", "flag", "founded", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["team", "Watford"], ["team_id", 0], ["flag", ""], ["founded", "1881"], ["created_at", "2017-11-16 17:01:10.194856"], ["updated_at", "2017-11-16 17:01:10.194856"]]
+  [1m[35m (1.5ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "teams" ("team", "team_id", "flag", "founded", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["team", "West Bromwich"], ["team_id", 0], ["flag", ""], ["founded", "1878"], ["created_at", "2017-11-16 17:01:10.201133"], ["updated_at", "2017-11-16 17:01:10.201133"]]
+  [1m[35m (1.5ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "teams" ("team", "team_id", "flag", "founded", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["team", "West Ham"], ["team_id", 0], ["flag", ""], ["founded", "1895"], ["created_at", "2017-11-16 17:01:10.205070"], ["updated_at", "2017-11-16 17:01:10.205070"]]
+  [1m[35m (1.3ms)[0m  [1m[35mCOMMIT[0m
+  
+NameError (undefined local variable or method `eams_ligue' for #<TeamsController:0x007f89832f9b58>
+Did you mean?  teams_ligue):
+  
+app/controllers/teams_controller.rb:35:in `block in initialize'
+app/controllers/teams_controller.rb:34:in `map'
+app/controllers/teams_controller.rb:34:in `initialize'
+Started GET "/teams" for 127.0.0.1 at 2017-11-16 12:01:21 -0500
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "teams" ("team", "team_id", "flag", "founded", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["team", "Atalanta"], ["team_id", 8], ["flag", "http://soccer.sportsopendata.net/logos/italy/atalanta.png"], ["founded", "1907"], ["created_at", "2017-11-16 17:01:31.848035"], ["updated_at", "2017-11-16 17:01:31.848035"]]
+  [1m[35m (6.0ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.6ms)[0m  [1m[32mINSERT INTO "teams" ("team", "team_id", "flag", "founded", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["team", "Benevento"], ["team_id", 0], ["flag", "http://soccer.sportsopendata.net/logos/italy/benevento.png"], ["founded", "1929"], ["created_at", "2017-11-16 17:01:31.857162"], ["updated_at", "2017-11-16 17:01:31.857162"]]
+  [1m[35m (1.5ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.6ms)[0m  [1m[32mINSERT INTO "teams" ("team", "team_id", "flag", "founded", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["team", "Bologna"], ["team_id", 1577], ["flag", "http://soccer.sportsopendata.net/logos/italy/bologna.png"], ["founded", "1909"], ["created_at", "2017-11-16 17:01:31.862480"], ["updated_at", "2017-11-16 17:01:31.862480"]]
+  [1m[35m (1.8ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.4ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.6ms)[0m  [1m[32mINSERT INTO "teams" ("team", "team_id", "flag", "founded", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["team", "Cagliari"], ["team_id", 0], ["flag", "http://soccer.sportsopendata.net/logos/italy/cagliari.png"], ["founded", "1920"], ["created_at", "2017-11-16 17:01:31.868345"], ["updated_at", "2017-11-16 17:01:31.868345"]]
+  [1m[35m (1.5ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.5ms)[0m  [1m[32mINSERT INTO "teams" ("team", "team_id", "flag", "founded", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["team", "Chievo"], ["team_id", 73], ["flag", "http://soccer.sportsopendata.net/logos/italy/chievo.png"], ["founded", "1929"], ["created_at", "2017-11-16 17:01:31.873483"], ["updated_at", "2017-11-16 17:01:31.873483"]]
+  [1m[35m (1.7ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.6ms)[0m  [1m[32mINSERT INTO "teams" ("team", "team_id", "flag", "founded", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["team", "Crotone"], ["team_id", 8], ["flag", "http://soccer.sportsopendata.net/logos/italy/crotone.png"], ["founded", "1910"], ["created_at", "2017-11-16 17:01:31.879130"], ["updated_at", "2017-11-16 17:01:31.879130"]]
+  [1m[35m (1.5ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.4ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.6ms)[0m  [1m[32mINSERT INTO "teams" ("team", "team_id", "flag", "founded", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["team", "Fiorentina"], ["team_id", 1], ["flag", "http://soccer.sportsopendata.net/logos/italy/fiorentina.png"], ["founded", "1926"], ["created_at", "2017-11-16 17:01:31.884655"], ["updated_at", "2017-11-16 17:01:31.884655"]]
+  [1m[35m (1.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "teams" ("team", "team_id", "flag", "founded", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["team", "Genoa"], ["team_id", 0], ["flag", "http://soccer.sportsopendata.net/logos/italy/genoa.png"], ["founded", "1893"], ["created_at", "2017-11-16 17:01:31.889807"], ["updated_at", "2017-11-16 17:01:31.889807"]]
+  [1m[35m (1.6ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "teams" ("team", "team_id", "flag", "founded", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["team", "Inter"], ["team_id", 691], ["flag", "http://soccer.sportsopendata.net/logos/italy/inter.png"], ["founded", "1908"], ["created_at", "2017-11-16 17:01:31.894562"], ["updated_at", "2017-11-16 17:01:31.894562"]]
+  [1m[35m (1.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "teams" ("team", "team_id", "flag", "founded", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["team", "Juventus"], ["team_id", 0], ["flag", "http://soccer.sportsopendata.net/logos/italy/juventus.png"], ["founded", "1897"], ["created_at", "2017-11-16 17:01:31.898193"], ["updated_at", "2017-11-16 17:01:31.898193"]]
+  [1m[35m (1.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "teams" ("team", "team_id", "flag", "founded", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["team", "Lazio"], ["team_id", 6], ["flag", "http://soccer.sportsopendata.net/logos/italy/lazio.png"], ["founded", "1900"], ["created_at", "2017-11-16 17:01:31.901712"], ["updated_at", "2017-11-16 17:01:31.901712"]]
+  [1m[35m (1.6ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.5ms)[0m  [1m[32mINSERT INTO "teams" ("team", "team_id", "flag", "founded", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["team", "Milan"], ["team_id", 792851482], ["flag", "http://soccer.sportsopendata.net/logos/italy/milan.png"], ["founded", "1899"], ["created_at", "2017-11-16 17:01:31.905489"], ["updated_at", "2017-11-16 17:01:31.905489"]]
+  [1m[35m (1.1ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.5ms)[0m  [1m[32mINSERT INTO "teams" ("team", "team_id", "flag", "founded", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["team", "Napoli"], ["team_id", 0], ["flag", "http://soccer.sportsopendata.net/logos/italy/napoli.png"], ["founded", "1926"], ["created_at", "2017-11-16 17:01:31.909590"], ["updated_at", "2017-11-16 17:01:31.909590"]]
+  [1m[35m (1.1ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "teams" ("team", "team_id", "flag", "founded", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["team", "Roma"], ["team_id", 23], ["flag", "http://soccer.sportsopendata.net/logos/italy/roma.png"], ["founded", "1927"], ["created_at", "2017-11-16 17:01:31.913645"], ["updated_at", "2017-11-16 17:01:31.913645"]]
+  [1m[35m (1.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "teams" ("team", "team_id", "flag", "founded", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["team", "Sampdoria"], ["team_id", 2018394], ["flag", "http://soccer.sportsopendata.net/logos/italy/sampdoria.png"], ["founded", "1946"], ["created_at", "2017-11-16 17:01:31.917655"], ["updated_at", "2017-11-16 17:01:31.917655"]]
+  [1m[35m (1.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "teams" ("team", "team_id", "flag", "founded", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["team", "Sassuolo"], ["team_id", 0], ["flag", "http://soccer.sportsopendata.net/logos/italy/sassuolo.png"], ["founded", "1920"], ["created_at", "2017-11-16 17:01:31.921431"], ["updated_at", "2017-11-16 17:01:31.921431"]]
+  [1m[35m (1.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "teams" ("team", "team_id", "flag", "founded", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["team", "Spal"], ["team_id", 0], ["flag", "http://soccer.sportsopendata.net/logos/italy/spal.png"], ["founded", "1907"], ["created_at", "2017-11-16 17:01:31.925084"], ["updated_at", "2017-11-16 17:01:31.925084"]]
+  [1m[35m (1.1ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "teams" ("team", "team_id", "flag", "founded", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["team", "Torino"], ["team_id", 0], ["flag", "http://soccer.sportsopendata.net/logos/italy/torino.png"], ["founded", "1906"], ["created_at", "2017-11-16 17:01:31.928443"], ["updated_at", "2017-11-16 17:01:31.928443"]]
+  [1m[35m (1.1ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "teams" ("team", "team_id", "flag", "founded", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["team", "Udinese"], ["team_id", 54], ["flag", "http://soccer.sportsopendata.net/logos/italy/udinese.png"], ["founded", "1896"], ["created_at", "2017-11-16 17:01:31.932412"], ["updated_at", "2017-11-16 17:01:31.932412"]]
+  [1m[35m (1.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "teams" ("team", "team_id", "flag", "founded", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["team", "Verona"], ["team_id", 0], ["flag", "http://soccer.sportsopendata.net/logos/italy/hellas.png"], ["founded", "1903"], ["created_at", "2017-11-16 17:01:31.936437"], ["updated_at", "2017-11-16 17:01:31.936437"]]
+  [1m[35m (1.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.5ms)[0m  [1m[32mINSERT INTO "teams" ("team", "team_id", "flag", "founded", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["team", "Arsenal"], ["team_id", 0], ["flag", ""], ["founded", "1886"], ["created_at", "2017-11-16 17:01:32.287391"], ["updated_at", "2017-11-16 17:01:32.287391"]]
+  [1m[35m (1.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.5ms)[0m  [1m[32mINSERT INTO "teams" ("team", "team_id", "flag", "founded", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["team", "Bournemouth"], ["team_id", 0], ["flag", ""], ["founded", "1899"], ["created_at", "2017-11-16 17:01:32.292639"], ["updated_at", "2017-11-16 17:01:32.292639"]]
+  [1m[35m (1.7ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.5ms)[0m  [1m[32mINSERT INTO "teams" ("team", "team_id", "flag", "founded", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["team", "Brighton & Hove Albion"], ["team_id", 0], ["flag", ""], ["founded", ""], ["created_at", "2017-11-16 17:01:32.298261"], ["updated_at", "2017-11-16 17:01:32.298261"]]
+  [1m[35m (1.5ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.5ms)[0m  [1m[32mINSERT INTO "teams" ("team", "team_id", "flag", "founded", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["team", "Burnley"], ["team_id", 4], ["flag", ""], ["founded", "1882"], ["created_at", "2017-11-16 17:01:32.303261"], ["updated_at", "2017-11-16 17:01:32.303261"]]
+  [1m[35m (1.6ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "teams" ("team", "team_id", "flag", "founded", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["team", "Chelsea"], ["team_id", 0], ["flag", ""], ["founded", "1905"], ["created_at", "2017-11-16 17:01:32.307937"], ["updated_at", "2017-11-16 17:01:32.307937"]]
+  [1m[35m (1.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "teams" ("team", "team_id", "flag", "founded", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["team", "Crystal Palace"], ["team_id", 0], ["flag", ""], ["founded", "1905"], ["created_at", "2017-11-16 17:01:32.312073"], ["updated_at", "2017-11-16 17:01:32.312073"]]
+  [1m[35m (1.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "teams" ("team", "team_id", "flag", "founded", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["team", "Everton"], ["team_id", 0], ["flag", ""], ["founded", "1878"], ["created_at", "2017-11-16 17:01:32.315774"], ["updated_at", "2017-11-16 17:01:32.315774"]]
+  [1m[35m (1.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "teams" ("team", "team_id", "flag", "founded", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["team", "Huddersfield Town"], ["team_id", 8], ["flag", ""], ["founded", ""], ["created_at", "2017-11-16 17:01:32.319584"], ["updated_at", "2017-11-16 17:01:32.319584"]]
+  [1m[35m (1.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.5ms)[0m  [1m[32mINSERT INTO "teams" ("team", "team_id", "flag", "founded", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["team", "Leicester City"], ["team_id", 0], ["flag", ""], ["founded", "1884"], ["created_at", "2017-11-16 17:01:32.322932"], ["updated_at", "2017-11-16 17:01:32.322932"]]
+  [1m[35m (1.1ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "teams" ("team", "team_id", "flag", "founded", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["team", "Liverpool"], ["team_id", 0], ["flag", ""], ["founded", "1892"], ["created_at", "2017-11-16 17:01:32.327183"], ["updated_at", "2017-11-16 17:01:32.327183"]]
+  [1m[35m (1.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "teams" ("team", "team_id", "flag", "founded", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["team", "Man City"], ["team_id", 0], ["flag", ""], ["founded", "1880"], ["created_at", "2017-11-16 17:01:32.330911"], ["updated_at", "2017-11-16 17:01:32.330911"]]
+  [1m[35m (1.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "teams" ("team", "team_id", "flag", "founded", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["team", "Man United"], ["team_id", 0], ["flag", ""], ["founded", "1878"], ["created_at", "2017-11-16 17:01:32.334610"], ["updated_at", "2017-11-16 17:01:32.334610"]]
+  [1m[35m (1.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "teams" ("team", "team_id", "flag", "founded", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["team", "Newcastle"], ["team_id", 0], ["flag", ""], ["founded", ""], ["created_at", "2017-11-16 17:01:32.338291"], ["updated_at", "2017-11-16 17:01:32.338291"]]
+  [1m[35m (1.5ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "teams" ("team", "team_id", "flag", "founded", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["team", "Southampton"], ["team_id", 0], ["flag", ""], ["founded", "1885"], ["created_at", "2017-11-16 17:01:32.342383"], ["updated_at", "2017-11-16 17:01:32.342383"]]
+  [1m[35m (1.5ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "teams" ("team", "team_id", "flag", "founded", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["team", "Stoke City"], ["team_id", 0], ["flag", ""], ["founded", "1863"], ["created_at", "2017-11-16 17:01:32.346449"], ["updated_at", "2017-11-16 17:01:32.346449"]]
+  [1m[35m (1.5ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "teams" ("team", "team_id", "flag", "founded", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["team", "Swansea City"], ["team_id", 0], ["flag", ""], ["founded", "1912"], ["created_at", "2017-11-16 17:01:32.350500"], ["updated_at", "2017-11-16 17:01:32.350500"]]
+  [1m[35m (1.5ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "teams" ("team", "team_id", "flag", "founded", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["team", "Tottenham"], ["team_id", 0], ["flag", ""], ["founded", "1882"], ["created_at", "2017-11-16 17:01:32.354600"], ["updated_at", "2017-11-16 17:01:32.354600"]]
+  [1m[35m (1.5ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "teams" ("team", "team_id", "flag", "founded", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["team", "Watford"], ["team_id", 0], ["flag", ""], ["founded", "1881"], ["created_at", "2017-11-16 17:01:32.358554"], ["updated_at", "2017-11-16 17:01:32.358554"]]
+  [1m[35m (1.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "teams" ("team", "team_id", "flag", "founded", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["team", "West Bromwich"], ["team_id", 0], ["flag", ""], ["founded", "1878"], ["created_at", "2017-11-16 17:01:32.363045"], ["updated_at", "2017-11-16 17:01:32.363045"]]
+  [1m[35m (1.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "teams" ("team", "team_id", "flag", "founded", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["team", "West Ham"], ["team_id", 0], ["flag", ""], ["founded", "1895"], ["created_at", "2017-11-16 17:01:32.366772"], ["updated_at", "2017-11-16 17:01:32.366772"]]
+  [1m[35m (1.1ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "teams" ("team", "team_id", "flag", "founded", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["team", "Amiens"], ["team_id", 1], ["flag", ""], ["founded", ""], ["created_at", "2017-11-16 17:01:32.693235"], ["updated_at", "2017-11-16 17:01:32.693235"]]
+  [1m[35m (1.7ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "teams" ("team", "team_id", "flag", "founded", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["team", "Angers"], ["team_id", 0], ["flag", ""], ["founded", ""], ["created_at", "2017-11-16 17:01:32.697621"], ["updated_at", "2017-11-16 17:01:32.697621"]]
+  [1m[35m (1.1ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.7ms)[0m  [1m[32mINSERT INTO "teams" ("team", "team_id", "flag", "founded", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["team", "Bordeaux"], ["team_id", 0], ["flag", ""], ["founded", ""], ["created_at", "2017-11-16 17:01:32.705196"], ["updated_at", "2017-11-16 17:01:32.705196"]]
+  [1m[35m (1.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "teams" ("team", "team_id", "flag", "founded", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["team", "Caen"], ["team_id", 0], ["flag", ""], ["founded", ""], ["created_at", "2017-11-16 17:01:32.709707"], ["updated_at", "2017-11-16 17:01:32.709707"]]
+  [1m[35m (1.1ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "teams" ("team", "team_id", "flag", "founded", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["team", "Digione"], ["team_id", 0], ["flag", ""], ["founded", ""], ["created_at", "2017-11-16 17:01:32.713554"], ["updated_at", "2017-11-16 17:01:32.713554"]]
+  [1m[35m (1.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "teams" ("team", "team_id", "flag", "founded", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["team", "Guingamp"], ["team_id", 0], ["flag", ""], ["founded", ""], ["created_at", "2017-11-16 17:01:32.717386"], ["updated_at", "2017-11-16 17:01:32.717386"]]
+  [1m[35m (1.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "teams" ("team", "team_id", "flag", "founded", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["team", "Lilla"], ["team_id", 0], ["flag", ""], ["founded", ""], ["created_at", "2017-11-16 17:01:32.721301"], ["updated_at", "2017-11-16 17:01:32.721301"]]
+  [1m[35m (1.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "teams" ("team", "team_id", "flag", "founded", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["team", "Lione"], ["team_id", 6], ["flag", ""], ["founded", ""], ["created_at", "2017-11-16 17:01:32.725170"], ["updated_at", "2017-11-16 17:01:32.725170"]]
+  [1m[35m (2.0ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.7ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "teams" ("team", "team_id", "flag", "founded", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["team", "Metz"], ["team_id", 0], ["flag", ""], ["founded", ""], ["created_at", "2017-11-16 17:01:32.730687"], ["updated_at", "2017-11-16 17:01:32.730687"]]
+  [1m[35m (1.1ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.5ms)[0m  [1m[32mINSERT INTO "teams" ("team", "team_id", "flag", "founded", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["team", "Monaco"], ["team_id", 0], ["flag", ""], ["founded", ""], ["created_at", "2017-11-16 17:01:32.735537"], ["updated_at", "2017-11-16 17:01:32.735537"]]
+  [1m[35m (1.5ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (4.5ms)[0m  [1m[32mINSERT INTO "teams" ("team", "team_id", "flag", "founded", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["team", "Montpellier"], ["team_id", 0], ["flag", ""], ["founded", ""], ["created_at", "2017-11-16 17:01:32.740852"], ["updated_at", "2017-11-16 17:01:32.740852"]]
+  [1m[35m (1.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "teams" ("team", "team_id", "flag", "founded", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["team", "Nantes"], ["team_id", 0], ["flag", ""], ["founded", ""], ["created_at", "2017-11-16 17:01:32.749101"], ["updated_at", "2017-11-16 17:01:32.749101"]]
+  [1m[35m (1.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "teams" ("team", "team_id", "flag", "founded", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["team", "Nizza"], ["team_id", 0], ["flag", ""], ["founded", ""], ["created_at", "2017-11-16 17:01:32.752878"], ["updated_at", "2017-11-16 17:01:32.752878"]]
+  [1m[35m (1.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "teams" ("team", "team_id", "flag", "founded", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["team", "Ol. Marsiglia"], ["team_id", 0], ["flag", ""], ["founded", ""], ["created_at", "2017-11-16 17:01:32.756474"], ["updated_at", "2017-11-16 17:01:32.756474"]]
+  [1m[35m (1.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "teams" ("team", "team_id", "flag", "founded", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["team", "Paris SG"], ["team_id", 0], ["flag", ""], ["founded", ""], ["created_at", "2017-11-16 17:01:32.760038"], ["updated_at", "2017-11-16 17:01:32.760038"]]
+  [1m[35m (1.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.5ms)[0m  [1m[32mINSERT INTO "teams" ("team", "team_id", "flag", "founded", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["team", "Racing Strasburgo"], ["team_id", 4], ["flag", ""], ["founded", ""], ["created_at", "2017-11-16 17:01:32.763545"], ["updated_at", "2017-11-16 17:01:32.763545"]]
+  [1m[35m (1.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "teams" ("team", "team_id", "flag", "founded", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["team", "Rennes"], ["team_id", 0], ["flag", ""], ["founded", ""], ["created_at", "2017-11-16 17:01:32.767626"], ["updated_at", "2017-11-16 17:01:32.767626"]]
+  [1m[35m (1.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (2.0ms)[0m  [1m[32mINSERT INTO "teams" ("team", "team_id", "flag", "founded", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["team", "Saint-Étienne"], ["team_id", 0], ["flag", ""], ["founded", ""], ["created_at", "2017-11-16 17:01:32.771434"], ["updated_at", "2017-11-16 17:01:32.771434"]]
+  [1m[35m (1.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.5ms)[0m  [1m[32mINSERT INTO "teams" ("team", "team_id", "flag", "founded", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["team", "Tolosa"], ["team_id", 3], ["flag", ""], ["founded", ""], ["created_at", "2017-11-16 17:01:32.776845"], ["updated_at", "2017-11-16 17:01:32.776845"]]
+  [1m[35m (1.6ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "teams" ("team", "team_id", "flag", "founded", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["team", "Troyes"], ["team_id", 0], ["flag", ""], ["founded", ""], ["created_at", "2017-11-16 17:01:32.781433"], ["updated_at", "2017-11-16 17:01:32.781433"]]
+  [1m[35m (1.4ms)[0m  [1m[35mCOMMIT[0m
+Processing by TeamsController#index as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering teams/index.html.erb
+  Rendered teams/index.html.erb (56.8ms)
+Completed 200 OK in 1180ms (Views: 66.5ms | ActiveRecord: 3.3ms)
+
+
+Started GET "/teams" for 127.0.0.1 at 2017-11-16 12:02:20 -0500
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.7ms)[0m  [1m[32mINSERT INTO "teams" ("team", "team_id", "flag", "founded", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["team", "Atalanta"], ["team_id", 8], ["flag", "http://soccer.sportsopendata.net/logos/italy/atalanta.png"], ["founded", "1907"], ["created_at", "2017-11-16 17:02:21.274056"], ["updated_at", "2017-11-16 17:02:21.274056"]]
+  [1m[35m (5.9ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.5ms)[0m  [1m[32mINSERT INTO "teams" ("team", "team_id", "flag", "founded", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["team", "Benevento"], ["team_id", 0], ["flag", "http://soccer.sportsopendata.net/logos/italy/benevento.png"], ["founded", "1929"], ["created_at", "2017-11-16 17:02:21.283218"], ["updated_at", "2017-11-16 17:02:21.283218"]]
+  [1m[35m (1.5ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.5ms)[0m  [1m[32mINSERT INTO "teams" ("team", "team_id", "flag", "founded", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["team", "Bologna"], ["team_id", 1577], ["flag", "http://soccer.sportsopendata.net/logos/italy/bologna.png"], ["founded", "1909"], ["created_at", "2017-11-16 17:02:21.287974"], ["updated_at", "2017-11-16 17:02:21.287974"]]
+  [1m[35m (1.6ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.6ms)[0m  [1m[32mINSERT INTO "teams" ("team", "team_id", "flag", "founded", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["team", "Cagliari"], ["team_id", 0], ["flag", "http://soccer.sportsopendata.net/logos/italy/cagliari.png"], ["founded", "1920"], ["created_at", "2017-11-16 17:02:21.292973"], ["updated_at", "2017-11-16 17:02:21.292973"]]
+  [1m[35m (1.6ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.5ms)[0m  [1m[32mINSERT INTO "teams" ("team", "team_id", "flag", "founded", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["team", "Chievo"], ["team_id", 73], ["flag", "http://soccer.sportsopendata.net/logos/italy/chievo.png"], ["founded", "1929"], ["created_at", "2017-11-16 17:02:21.298162"], ["updated_at", "2017-11-16 17:02:21.298162"]]
+  [1m[35m (1.6ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.6ms)[0m  [1m[32mINSERT INTO "teams" ("team", "team_id", "flag", "founded", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["team", "Crotone"], ["team_id", 8], ["flag", "http://soccer.sportsopendata.net/logos/italy/crotone.png"], ["founded", "1910"], ["created_at", "2017-11-16 17:02:21.303059"], ["updated_at", "2017-11-16 17:02:21.303059"]]
+  [1m[35m (1.6ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.5ms)[0m  [1m[32mINSERT INTO "teams" ("team", "team_id", "flag", "founded", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["team", "Fiorentina"], ["team_id", 1], ["flag", "http://soccer.sportsopendata.net/logos/italy/fiorentina.png"], ["founded", "1926"], ["created_at", "2017-11-16 17:02:21.308349"], ["updated_at", "2017-11-16 17:02:21.308349"]]
+  [1m[35m (1.6ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.5ms)[0m  [1m[32mINSERT INTO "teams" ("team", "team_id", "flag", "founded", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["team", "Genoa"], ["team_id", 0], ["flag", "http://soccer.sportsopendata.net/logos/italy/genoa.png"], ["founded", "1893"], ["created_at", "2017-11-16 17:02:21.313237"], ["updated_at", "2017-11-16 17:02:21.313237"]]
+  [1m[35m (1.6ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.5ms)[0m  [1m[32mINSERT INTO "teams" ("team", "team_id", "flag", "founded", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["team", "Inter"], ["team_id", 691], ["flag", "http://soccer.sportsopendata.net/logos/italy/inter.png"], ["founded", "1908"], ["created_at", "2017-11-16 17:02:21.318207"], ["updated_at", "2017-11-16 17:02:21.318207"]]
+  [1m[35m (1.6ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "teams" ("team", "team_id", "flag", "founded", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["team", "Juventus"], ["team_id", 0], ["flag", "http://soccer.sportsopendata.net/logos/italy/juventus.png"], ["founded", "1897"], ["created_at", "2017-11-16 17:02:21.323031"], ["updated_at", "2017-11-16 17:02:21.323031"]]
+  [1m[35m (1.7ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "teams" ("team", "team_id", "flag", "founded", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["team", "Lazio"], ["team_id", 6], ["flag", "http://soccer.sportsopendata.net/logos/italy/lazio.png"], ["founded", "1900"], ["created_at", "2017-11-16 17:02:21.327560"], ["updated_at", "2017-11-16 17:02:21.327560"]]
+  [1m[35m (1.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "teams" ("team", "team_id", "flag", "founded", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["team", "Milan"], ["team_id", 792851482], ["flag", "http://soccer.sportsopendata.net/logos/italy/milan.png"], ["founded", "1899"], ["created_at", "2017-11-16 17:02:21.331570"], ["updated_at", "2017-11-16 17:02:21.331570"]]
+  [1m[35m (1.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "teams" ("team", "team_id", "flag", "founded", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["team", "Napoli"], ["team_id", 0], ["flag", "http://soccer.sportsopendata.net/logos/italy/napoli.png"], ["founded", "1926"], ["created_at", "2017-11-16 17:02:21.335182"], ["updated_at", "2017-11-16 17:02:21.335182"]]
+  [1m[35m (1.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "teams" ("team", "team_id", "flag", "founded", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["team", "Roma"], ["team_id", 23], ["flag", "http://soccer.sportsopendata.net/logos/italy/roma.png"], ["founded", "1927"], ["created_at", "2017-11-16 17:02:21.338345"], ["updated_at", "2017-11-16 17:02:21.338345"]]
+  [1m[35m (1.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "teams" ("team", "team_id", "flag", "founded", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["team", "Sampdoria"], ["team_id", 2018394], ["flag", "http://soccer.sportsopendata.net/logos/italy/sampdoria.png"], ["founded", "1946"], ["created_at", "2017-11-16 17:02:21.341452"], ["updated_at", "2017-11-16 17:02:21.341452"]]
+  [1m[35m (1.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "teams" ("team", "team_id", "flag", "founded", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["team", "Sassuolo"], ["team_id", 0], ["flag", "http://soccer.sportsopendata.net/logos/italy/sassuolo.png"], ["founded", "1920"], ["created_at", "2017-11-16 17:02:21.344835"], ["updated_at", "2017-11-16 17:02:21.344835"]]
+  [1m[35m (1.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "teams" ("team", "team_id", "flag", "founded", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["team", "Spal"], ["team_id", 0], ["flag", "http://soccer.sportsopendata.net/logos/italy/spal.png"], ["founded", "1907"], ["created_at", "2017-11-16 17:02:21.348327"], ["updated_at", "2017-11-16 17:02:21.348327"]]
+  [1m[35m (1.5ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "teams" ("team", "team_id", "flag", "founded", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["team", "Torino"], ["team_id", 0], ["flag", "http://soccer.sportsopendata.net/logos/italy/torino.png"], ["founded", "1906"], ["created_at", "2017-11-16 17:02:21.352166"], ["updated_at", "2017-11-16 17:02:21.352166"]]
+  [1m[35m (1.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "teams" ("team", "team_id", "flag", "founded", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["team", "Udinese"], ["team_id", 54], ["flag", "http://soccer.sportsopendata.net/logos/italy/udinese.png"], ["founded", "1896"], ["created_at", "2017-11-16 17:02:21.355741"], ["updated_at", "2017-11-16 17:02:21.355741"]]
+  [1m[35m (1.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "teams" ("team", "team_id", "flag", "founded", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["team", "Verona"], ["team_id", 0], ["flag", "http://soccer.sportsopendata.net/logos/italy/hellas.png"], ["founded", "1903"], ["created_at", "2017-11-16 17:02:21.359265"], ["updated_at", "2017-11-16 17:02:21.359265"]]
+  [1m[35m (1.5ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (1.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.6ms)[0m  [1m[32mINSERT INTO "teams" ("team", "team_id", "flag", "founded", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["team", "Arsenal"], ["team_id", 0], ["flag", ""], ["founded", "1886"], ["created_at", "2017-11-16 17:02:21.675655"], ["updated_at", "2017-11-16 17:02:21.675655"]]
+  [1m[35m (4.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.5ms)[0m  [1m[32mINSERT INTO "teams" ("team", "team_id", "flag", "founded", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["team", "Bournemouth"], ["team_id", 0], ["flag", ""], ["founded", "1899"], ["created_at", "2017-11-16 17:02:21.684425"], ["updated_at", "2017-11-16 17:02:21.684425"]]
+  [1m[35m (1.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "teams" ("team", "team_id", "flag", "founded", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["team", "Brighton & Hove Albion"], ["team_id", 0], ["flag", ""], ["founded", ""], ["created_at", "2017-11-16 17:02:21.688761"], ["updated_at", "2017-11-16 17:02:21.688761"]]
+  [1m[35m (1.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "teams" ("team", "team_id", "flag", "founded", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["team", "Burnley"], ["team_id", 4], ["flag", ""], ["founded", "1882"], ["created_at", "2017-11-16 17:02:21.692638"], ["updated_at", "2017-11-16 17:02:21.692638"]]
+  [1m[35m (1.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "teams" ("team", "team_id", "flag", "founded", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["team", "Chelsea"], ["team_id", 0], ["flag", ""], ["founded", "1905"], ["created_at", "2017-11-16 17:02:21.696096"], ["updated_at", "2017-11-16 17:02:21.696096"]]
+  [1m[35m (1.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "teams" ("team", "team_id", "flag", "founded", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["team", "Crystal Palace"], ["team_id", 0], ["flag", ""], ["founded", "1905"], ["created_at", "2017-11-16 17:02:21.699220"], ["updated_at", "2017-11-16 17:02:21.699220"]]
+  [1m[35m (1.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "teams" ("team", "team_id", "flag", "founded", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["team", "Everton"], ["team_id", 0], ["flag", ""], ["founded", "1878"], ["created_at", "2017-11-16 17:02:21.702673"], ["updated_at", "2017-11-16 17:02:21.702673"]]
+  [1m[35m (1.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "teams" ("team", "team_id", "flag", "founded", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["team", "Huddersfield Town"], ["team_id", 8], ["flag", ""], ["founded", ""], ["created_at", "2017-11-16 17:02:21.706055"], ["updated_at", "2017-11-16 17:02:21.706055"]]
+  [1m[35m (1.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "teams" ("team", "team_id", "flag", "founded", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["team", "Leicester City"], ["team_id", 0], ["flag", ""], ["founded", "1884"], ["created_at", "2017-11-16 17:02:21.709281"], ["updated_at", "2017-11-16 17:02:21.709281"]]
+  [1m[35m (1.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "teams" ("team", "team_id", "flag", "founded", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["team", "Liverpool"], ["team_id", 0], ["flag", ""], ["founded", "1892"], ["created_at", "2017-11-16 17:02:21.712774"], ["updated_at", "2017-11-16 17:02:21.712774"]]
+  [1m[35m (1.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "teams" ("team", "team_id", "flag", "founded", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["team", "Man City"], ["team_id", 0], ["flag", ""], ["founded", "1880"], ["created_at", "2017-11-16 17:02:21.716064"], ["updated_at", "2017-11-16 17:02:21.716064"]]
+  [1m[35m (1.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "teams" ("team", "team_id", "flag", "founded", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["team", "Man United"], ["team_id", 0], ["flag", ""], ["founded", "1878"], ["created_at", "2017-11-16 17:02:21.719591"], ["updated_at", "2017-11-16 17:02:21.719591"]]
+  [1m[35m (1.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "teams" ("team", "team_id", "flag", "founded", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["team", "Newcastle"], ["team_id", 0], ["flag", ""], ["founded", ""], ["created_at", "2017-11-16 17:02:21.723054"], ["updated_at", "2017-11-16 17:02:21.723054"]]
+  [1m[35m (1.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "teams" ("team", "team_id", "flag", "founded", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["team", "Southampton"], ["team_id", 0], ["flag", ""], ["founded", "1885"], ["created_at", "2017-11-16 17:02:21.726356"], ["updated_at", "2017-11-16 17:02:21.726356"]]
+  [1m[35m (1.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "teams" ("team", "team_id", "flag", "founded", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["team", "Stoke City"], ["team_id", 0], ["flag", ""], ["founded", "1863"], ["created_at", "2017-11-16 17:02:21.729693"], ["updated_at", "2017-11-16 17:02:21.729693"]]
+  [1m[35m (1.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "teams" ("team", "team_id", "flag", "founded", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["team", "Swansea City"], ["team_id", 0], ["flag", ""], ["founded", "1912"], ["created_at", "2017-11-16 17:02:21.732890"], ["updated_at", "2017-11-16 17:02:21.732890"]]
+  [1m[35m (1.6ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "teams" ("team", "team_id", "flag", "founded", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["team", "Tottenham"], ["team_id", 0], ["flag", ""], ["founded", "1882"], ["created_at", "2017-11-16 17:02:21.736699"], ["updated_at", "2017-11-16 17:02:21.736699"]]
+  [1m[35m (1.5ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "teams" ("team", "team_id", "flag", "founded", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["team", "Watford"], ["team_id", 0], ["flag", ""], ["founded", "1881"], ["created_at", "2017-11-16 17:02:21.740564"], ["updated_at", "2017-11-16 17:02:21.740564"]]
+  [1m[35m (1.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "teams" ("team", "team_id", "flag", "founded", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["team", "West Bromwich"], ["team_id", 0], ["flag", ""], ["founded", "1878"], ["created_at", "2017-11-16 17:02:21.743962"], ["updated_at", "2017-11-16 17:02:21.743962"]]
+  [1m[35m (1.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "teams" ("team", "team_id", "flag", "founded", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["team", "West Ham"], ["team_id", 0], ["flag", ""], ["founded", "1895"], ["created_at", "2017-11-16 17:02:21.747511"], ["updated_at", "2017-11-16 17:02:21.747511"]]
+  [1m[35m (1.4ms)[0m  [1m[35mCOMMIT[0m
+Processing by TeamsController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering teams/index.html.erb
+  Rendered teams/index.html.erb (24.2ms)
+Completed 200 OK in 1525ms (Views: 33.1ms | ActiveRecord: 0.3ms)
+
+
+  [1m[35m (1.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1[0m  [["key", "environment"]]
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1[0m  [["key", "environment"]]
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1[0m  [["key", "environment"]]
+  [1m[35m (234.8ms)[0m  [1m[35mDROP DATABASE IF EXISTS "the_beautiful_game_development"[0m
+  [1m[35m (239.6ms)[0m  [1m[35mDROP DATABASE IF EXISTS "the_beautiful_game_test"[0m
+  [1m[35m (18.3ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" character varying NOT NULL PRIMARY KEY)[0m
+  [1m[35m (30.7ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" character varying NOT NULL PRIMARY KEY, "value" character varying, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
+  [1m[35m (2.3ms)[0m  [1m[34mSELECT pg_try_advisory_lock(535366471102073100)[0m
+  [1m[35m (2.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to CreateUsers (20171114185415)
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (28.2ms)[0m  [1m[35mCREATE TABLE "users" ("id" bigserial primary key, "email" character varying, "password_digest" character varying, "name" character varying, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
+  [1m[35mSQL (1.0ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20171114185415"]]
+  [1m[35m (1.6ms)[0m  [1m[35mCOMMIT[0m
+Migrating to CreateTeams (20171114202950)
+  [1m[35m (5.8ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (15.7ms)[0m  [1m[35mCREATE TABLE "teams" ("id" bigserial primary key, "team" character varying, "team_id" integer, "flag" character varying, "founded" character varying, "moments" character varying, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20171114202950"]]
+  [1m[35m (1.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.4ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.5ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "key"[0m  [["key", "environment"], ["value", "development"], ["created_at", "2017-11-16 17:21:31.526403"], ["updated_at", "2017-11-16 17:21:31.526403"]]
+  [1m[35m (1.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT pg_advisory_unlock(535366471102073100)[0m
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Started GET "/signup" for 127.0.0.1 at 2017-11-16 12:22:05 -0500
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by UsersController#new as HTML
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/new.html.erb within layouts/application (47.6ms)
+Completed 200 OK in 454ms (Views: 418.5ms | ActiveRecord: 6.3ms)
+
+
+Started POST "/users" for 127.0.0.1 at 2017-11-16 12:22:14 -0500
+Processing by UsersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"grT/Du1HKh5bPxCOtF5ZbsTO5W21UHn0CM/kso2BvatDurscgO11EXYz57WABw+j743dYwsG8CCwBdg0AlrsGQ==", "user"=>{"name"=>"Rohtas ", "email"=>"rohtaswadera@gmail.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Create Your Account"}
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (3.5ms)[0m  [1m[32mINSERT INTO "users" ("email", "password_digest", "name", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["email", "rohtaswadera@gmail.com"], ["password_digest", "$2a$10$BGzRvdpGOi42BhIYDjZDFeLZuH4E8Fj3wPV51cJfOaou5cFwlCjfm"], ["name", "Rohtas "], ["created_at", "2017-11-16 17:22:15.084599"], ["updated_at", "2017-11-16 17:22:15.084599"]]
+  [1m[35m (5.8ms)[0m  [1m[35mCOMMIT[0m
+Redirected to http://localhost:3000/users/1
+Completed 302 Found in 106ms (ActiveRecord: 18.3ms)
+
+
+Started GET "/users/1" for 127.0.0.1 at 2017-11-16 12:22:15 -0500
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+Redirected to http://localhost:3000/login
+Filter chain halted as :require_user rendered or redirected
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/login" for 127.0.0.1 at 2017-11-16 12:22:15 -0500
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (1.7ms)
+Completed 200 OK in 49ms (Views: 41.0ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/login" for 127.0.0.1 at 2017-11-16 12:22:20 -0500
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"xQMhBP2Bv0HdiOEBsXSqVm+KosUX3WONQDBoeKnz80oEDWUWkCvgTvCEFjqFLfybRMmay6mL6ln4+lT+Jiii+A==", "session"=>{"email"=>"rohtaswadera@gmail.com", "password"=>"[FILTERED]"}, "commit"=>"Log In"}
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "rohtaswadera@gmail.com"], ["LIMIT", 1]]
+Redirected to http://localhost:3000/teams
+Completed 302 Found in 88ms (ActiveRecord: 0.9ms)
+
+
+Started GET "/teams" for 127.0.0.1 at 2017-11-16 12:22:21 -0500
+Processing by TeamsController#index as HTML
+Redirected to http://localhost:3000/login
+Filter chain halted as :require_user rendered or redirected
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/login" for 127.0.0.1 at 2017-11-16 12:22:21 -0500
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (1.5ms)
+Completed 200 OK in 41ms (Views: 36.9ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/login" for 127.0.0.1 at 2017-11-16 12:22:30 -0500
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"RjkboW8Bg6go0P9QkWbFWk06CYzjMbZCsx2xppDrLMiHN1+zAqvcpwXcCGulP5OXZnkxgl1nP5YL140gHzB9eg==", "session"=>{"email"=>"rohtaswadera@gmail.com", "password"=>"[FILTERED]"}, "commit"=>"Log In"}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "rohtaswadera@gmail.com"], ["LIMIT", 1]]
+Redirected to http://localhost:3000/teams
+Completed 302 Found in 88ms (ActiveRecord: 0.8ms)
+
+
+Started GET "/teams" for 127.0.0.1 at 2017-11-16 12:22:40 -0500
+Processing by TeamsController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (1.9ms)[0m  [1m[32mINSERT INTO "teams" ("team", "flag", "founded", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["team", "Atalanta"], ["flag", "http://soccer.sportsopendata.net/logos/italy/atalanta.png"], ["founded", "1907"], ["created_at", "2017-11-16 17:22:40.737536"], ["updated_at", "2017-11-16 17:22:40.737536"]]
+  [1m[35m (1.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "teams" ("team", "flag", "founded", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["team", "Benevento"], ["flag", "http://soccer.sportsopendata.net/logos/italy/benevento.png"], ["founded", "1929"], ["created_at", "2017-11-16 17:22:40.743213"], ["updated_at", "2017-11-16 17:22:40.743213"]]
+  [1m[35m (1.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "teams" ("team", "flag", "founded", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["team", "Bologna"], ["flag", "http://soccer.sportsopendata.net/logos/italy/bologna.png"], ["founded", "1909"], ["created_at", "2017-11-16 17:22:40.746859"], ["updated_at", "2017-11-16 17:22:40.746859"]]
+  [1m[35m (1.6ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "teams" ("team", "flag", "founded", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["team", "Cagliari"], ["flag", "http://soccer.sportsopendata.net/logos/italy/cagliari.png"], ["founded", "1920"], ["created_at", "2017-11-16 17:22:40.750631"], ["updated_at", "2017-11-16 17:22:40.750631"]]
+  [1m[35m (1.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "teams" ("team", "flag", "founded", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["team", "Chievo"], ["flag", "http://soccer.sportsopendata.net/logos/italy/chievo.png"], ["founded", "1929"], ["created_at", "2017-11-16 17:22:40.754501"], ["updated_at", "2017-11-16 17:22:40.754501"]]
+  [1m[35m (1.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "teams" ("team", "flag", "founded", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["team", "Crotone"], ["flag", "http://soccer.sportsopendata.net/logos/italy/crotone.png"], ["founded", "1910"], ["created_at", "2017-11-16 17:22:40.757931"], ["updated_at", "2017-11-16 17:22:40.757931"]]
+  [1m[35m (1.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "teams" ("team", "flag", "founded", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["team", "Fiorentina"], ["flag", "http://soccer.sportsopendata.net/logos/italy/fiorentina.png"], ["founded", "1926"], ["created_at", "2017-11-16 17:22:40.761262"], ["updated_at", "2017-11-16 17:22:40.761262"]]
+  [1m[35m (1.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "teams" ("team", "flag", "founded", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["team", "Genoa"], ["flag", "http://soccer.sportsopendata.net/logos/italy/genoa.png"], ["founded", "1893"], ["created_at", "2017-11-16 17:22:40.765091"], ["updated_at", "2017-11-16 17:22:40.765091"]]
+  [1m[35m (1.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "teams" ("team", "flag", "founded", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["team", "Inter"], ["flag", "http://soccer.sportsopendata.net/logos/italy/inter.png"], ["founded", "1908"], ["created_at", "2017-11-16 17:22:40.768574"], ["updated_at", "2017-11-16 17:22:40.768574"]]
+  [1m[35m (1.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "teams" ("team", "flag", "founded", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["team", "Juventus"], ["flag", "http://soccer.sportsopendata.net/logos/italy/juventus.png"], ["founded", "1897"], ["created_at", "2017-11-16 17:22:40.772394"], ["updated_at", "2017-11-16 17:22:40.772394"]]
+  [1m[35m (1.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "teams" ("team", "flag", "founded", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["team", "Lazio"], ["flag", "http://soccer.sportsopendata.net/logos/italy/lazio.png"], ["founded", "1900"], ["created_at", "2017-11-16 17:22:40.776581"], ["updated_at", "2017-11-16 17:22:40.776581"]]
+  [1m[35m (1.1ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.5ms)[0m  [1m[32mINSERT INTO "teams" ("team", "flag", "founded", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["team", "Milan"], ["flag", "http://soccer.sportsopendata.net/logos/italy/milan.png"], ["founded", "1899"], ["created_at", "2017-11-16 17:22:40.780026"], ["updated_at", "2017-11-16 17:22:40.780026"]]
+  [1m[35m (1.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "teams" ("team", "flag", "founded", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["team", "Napoli"], ["flag", "http://soccer.sportsopendata.net/logos/italy/napoli.png"], ["founded", "1926"], ["created_at", "2017-11-16 17:22:40.784264"], ["updated_at", "2017-11-16 17:22:40.784264"]]
+  [1m[35m (1.1ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "teams" ("team", "flag", "founded", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["team", "Roma"], ["flag", "http://soccer.sportsopendata.net/logos/italy/roma.png"], ["founded", "1927"], ["created_at", "2017-11-16 17:22:40.787909"], ["updated_at", "2017-11-16 17:22:40.787909"]]
+  [1m[35m (1.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "teams" ("team", "flag", "founded", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["team", "Sampdoria"], ["flag", "http://soccer.sportsopendata.net/logos/italy/sampdoria.png"], ["founded", "1946"], ["created_at", "2017-11-16 17:22:40.791985"], ["updated_at", "2017-11-16 17:22:40.791985"]]
+  [1m[35m (1.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "teams" ("team", "flag", "founded", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["team", "Sassuolo"], ["flag", "http://soccer.sportsopendata.net/logos/italy/sassuolo.png"], ["founded", "1920"], ["created_at", "2017-11-16 17:22:40.796403"], ["updated_at", "2017-11-16 17:22:40.796403"]]
+  [1m[35m (1.5ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "teams" ("team", "flag", "founded", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["team", "Spal"], ["flag", "http://soccer.sportsopendata.net/logos/italy/spal.png"], ["founded", "1907"], ["created_at", "2017-11-16 17:22:40.800314"], ["updated_at", "2017-11-16 17:22:40.800314"]]
+  [1m[35m (1.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "teams" ("team", "flag", "founded", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["team", "Torino"], ["flag", "http://soccer.sportsopendata.net/logos/italy/torino.png"], ["founded", "1906"], ["created_at", "2017-11-16 17:22:40.803847"], ["updated_at", "2017-11-16 17:22:40.803847"]]
+  [1m[35m (1.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "teams" ("team", "flag", "founded", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["team", "Udinese"], ["flag", "http://soccer.sportsopendata.net/logos/italy/udinese.png"], ["founded", "1896"], ["created_at", "2017-11-16 17:22:40.807600"], ["updated_at", "2017-11-16 17:22:40.807600"]]
+  [1m[35m (1.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "teams" ("team", "flag", "founded", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["team", "Verona"], ["flag", "http://soccer.sportsopendata.net/logos/italy/hellas.png"], ["founded", "1903"], ["created_at", "2017-11-16 17:22:40.811482"], ["updated_at", "2017-11-16 17:22:40.811482"]]
+  [1m[35m (1.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.4ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "teams" ("team", "flag", "founded", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["team", "Arsenal"], ["flag", ""], ["founded", "1886"], ["created_at", "2017-11-16 17:22:41.109378"], ["updated_at", "2017-11-16 17:22:41.109378"]]
+  [1m[35m (1.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "teams" ("team", "flag", "founded", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["team", "Bournemouth"], ["flag", ""], ["founded", "1899"], ["created_at", "2017-11-16 17:22:41.114217"], ["updated_at", "2017-11-16 17:22:41.114217"]]
+  [1m[35m (1.1ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.6ms)[0m  [1m[32mINSERT INTO "teams" ("team", "flag", "founded", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["team", "Brighton & Hove Albion"], ["flag", ""], ["founded", ""], ["created_at", "2017-11-16 17:22:41.117982"], ["updated_at", "2017-11-16 17:22:41.117982"]]
+  [1m[35m (1.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "teams" ("team", "flag", "founded", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["team", "Burnley"], ["flag", ""], ["founded", "1882"], ["created_at", "2017-11-16 17:22:41.122666"], ["updated_at", "2017-11-16 17:22:41.122666"]]
+  [1m[35m (1.1ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "teams" ("team", "flag", "founded", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["team", "Chelsea"], ["flag", ""], ["founded", "1905"], ["created_at", "2017-11-16 17:22:41.126572"], ["updated_at", "2017-11-16 17:22:41.126572"]]
+  [1m[35m (1.1ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "teams" ("team", "flag", "founded", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["team", "Crystal Palace"], ["flag", ""], ["founded", "1905"], ["created_at", "2017-11-16 17:22:41.129760"], ["updated_at", "2017-11-16 17:22:41.129760"]]
+  [1m[35m (1.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "teams" ("team", "flag", "founded", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["team", "Everton"], ["flag", ""], ["founded", "1878"], ["created_at", "2017-11-16 17:22:41.133479"], ["updated_at", "2017-11-16 17:22:41.133479"]]
+  [1m[35m (1.1ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "teams" ("team", "flag", "founded", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["team", "Huddersfield Town"], ["flag", ""], ["founded", ""], ["created_at", "2017-11-16 17:22:41.136888"], ["updated_at", "2017-11-16 17:22:41.136888"]]
+  [1m[35m (1.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "teams" ("team", "flag", "founded", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["team", "Leicester City"], ["flag", ""], ["founded", "1884"], ["created_at", "2017-11-16 17:22:41.140459"], ["updated_at", "2017-11-16 17:22:41.140459"]]
+  [1m[35m (1.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "teams" ("team", "flag", "founded", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["team", "Liverpool"], ["flag", ""], ["founded", "1892"], ["created_at", "2017-11-16 17:22:41.144928"], ["updated_at", "2017-11-16 17:22:41.144928"]]
+  [1m[35m (1.5ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "teams" ("team", "flag", "founded", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["team", "Man City"], ["flag", ""], ["founded", "1880"], ["created_at", "2017-11-16 17:22:41.149811"], ["updated_at", "2017-11-16 17:22:41.149811"]]
+  [1m[35m (1.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.4ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.8ms)[0m  [1m[32mINSERT INTO "teams" ("team", "flag", "founded", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["team", "Man United"], ["flag", ""], ["founded", "1878"], ["created_at", "2017-11-16 17:22:41.155204"], ["updated_at", "2017-11-16 17:22:41.155204"]]
+  [1m[35m (1.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.8ms)[0m  [1m[32mINSERT INTO "teams" ("team", "flag", "founded", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["team", "Newcastle"], ["flag", ""], ["founded", ""], ["created_at", "2017-11-16 17:22:41.161422"], ["updated_at", "2017-11-16 17:22:41.161422"]]
+  [1m[35m (1.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.6ms)[0m  [1m[32mINSERT INTO "teams" ("team", "flag", "founded", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["team", "Southampton"], ["flag", ""], ["founded", "1885"], ["created_at", "2017-11-16 17:22:41.166083"], ["updated_at", "2017-11-16 17:22:41.166083"]]
+  [1m[35m (1.5ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.5ms)[0m  [1m[32mINSERT INTO "teams" ("team", "flag", "founded", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["team", "Stoke City"], ["flag", ""], ["founded", "1863"], ["created_at", "2017-11-16 17:22:41.170854"], ["updated_at", "2017-11-16 17:22:41.170854"]]
+  [1m[35m (1.1ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "teams" ("team", "flag", "founded", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["team", "Swansea City"], ["flag", ""], ["founded", "1912"], ["created_at", "2017-11-16 17:22:41.175027"], ["updated_at", "2017-11-16 17:22:41.175027"]]
+  [1m[35m (1.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "teams" ("team", "flag", "founded", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["team", "Tottenham"], ["flag", ""], ["founded", "1882"], ["created_at", "2017-11-16 17:22:41.179266"], ["updated_at", "2017-11-16 17:22:41.179266"]]
+  [1m[35m (1.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "teams" ("team", "flag", "founded", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["team", "Watford"], ["flag", ""], ["founded", "1881"], ["created_at", "2017-11-16 17:22:41.183363"], ["updated_at", "2017-11-16 17:22:41.183363"]]
+  [1m[35m (1.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "teams" ("team", "flag", "founded", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["team", "West Bromwich"], ["flag", ""], ["founded", "1878"], ["created_at", "2017-11-16 17:22:41.187951"], ["updated_at", "2017-11-16 17:22:41.187951"]]
+  [1m[35m (1.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "teams" ("team", "flag", "founded", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["team", "West Ham"], ["flag", ""], ["founded", "1895"], ["created_at", "2017-11-16 17:22:41.191306"], ["updated_at", "2017-11-16 17:22:41.191306"]]
+  [1m[35m (1.5ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.6ms)[0m  [1m[32mINSERT INTO "teams" ("team", "flag", "founded", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["team", "Amiens"], ["flag", ""], ["founded", ""], ["created_at", "2017-11-16 17:22:41.408791"], ["updated_at", "2017-11-16 17:22:41.408791"]]
+  [1m[35m (1.7ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.5ms)[0m  [1m[32mINSERT INTO "teams" ("team", "flag", "founded", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["team", "Angers"], ["flag", ""], ["founded", ""], ["created_at", "2017-11-16 17:22:41.414650"], ["updated_at", "2017-11-16 17:22:41.414650"]]
+  [1m[35m (1.5ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.5ms)[0m  [1m[32mINSERT INTO "teams" ("team", "flag", "founded", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["team", "Bordeaux"], ["flag", ""], ["founded", ""], ["created_at", "2017-11-16 17:22:41.420392"], ["updated_at", "2017-11-16 17:22:41.420392"]]
+  [1m[35m (1.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.5ms)[0m  [1m[32mINSERT INTO "teams" ("team", "flag", "founded", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["team", "Caen"], ["flag", ""], ["founded", ""], ["created_at", "2017-11-16 17:22:41.425200"], ["updated_at", "2017-11-16 17:22:41.425200"]]
+  [1m[35m (1.6ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.7ms)[0m  [1m[32mINSERT INTO "teams" ("team", "flag", "founded", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["team", "Digione"], ["flag", ""], ["founded", ""], ["created_at", "2017-11-16 17:22:41.430279"], ["updated_at", "2017-11-16 17:22:41.430279"]]
+  [1m[35m (1.5ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.6ms)[0m  [1m[32mINSERT INTO "teams" ("team", "flag", "founded", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["team", "Guingamp"], ["flag", ""], ["founded", ""], ["created_at", "2017-11-16 17:22:41.436319"], ["updated_at", "2017-11-16 17:22:41.436319"]]
+  [1m[35m (1.5ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.5ms)[0m  [1m[32mINSERT INTO "teams" ("team", "flag", "founded", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["team", "Lilla"], ["flag", ""], ["founded", ""], ["created_at", "2017-11-16 17:22:41.441515"], ["updated_at", "2017-11-16 17:22:41.441515"]]
+  [1m[35m (1.7ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.7ms)[0m  [1m[32mINSERT INTO "teams" ("team", "flag", "founded", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["team", "Lione"], ["flag", ""], ["founded", ""], ["created_at", "2017-11-16 17:22:41.447377"], ["updated_at", "2017-11-16 17:22:41.447377"]]
+  [1m[35m (1.6ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.5ms)[0m  [1m[32mINSERT INTO "teams" ("team", "flag", "founded", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["team", "Metz"], ["flag", ""], ["founded", ""], ["created_at", "2017-11-16 17:22:41.453109"], ["updated_at", "2017-11-16 17:22:41.453109"]]
+  [1m[35m (1.1ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "teams" ("team", "flag", "founded", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["team", "Monaco"], ["flag", ""], ["founded", ""], ["created_at", "2017-11-16 17:22:41.457071"], ["updated_at", "2017-11-16 17:22:41.457071"]]
+  [1m[35m (1.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "teams" ("team", "flag", "founded", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["team", "Montpellier"], ["flag", ""], ["founded", ""], ["created_at", "2017-11-16 17:22:41.460456"], ["updated_at", "2017-11-16 17:22:41.460456"]]
+  [1m[35m (1.0ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "teams" ("team", "flag", "founded", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["team", "Nantes"], ["flag", ""], ["founded", ""], ["created_at", "2017-11-16 17:22:41.463394"], ["updated_at", "2017-11-16 17:22:41.463394"]]
+  [1m[35m (1.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "teams" ("team", "flag", "founded", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["team", "Nizza"], ["flag", ""], ["founded", ""], ["created_at", "2017-11-16 17:22:41.466638"], ["updated_at", "2017-11-16 17:22:41.466638"]]
+  [1m[35m (1.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "teams" ("team", "flag", "founded", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["team", "Ol. Marsiglia"], ["flag", ""], ["founded", ""], ["created_at", "2017-11-16 17:22:41.470436"], ["updated_at", "2017-11-16 17:22:41.470436"]]
+  [1m[35m (1.1ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "teams" ("team", "flag", "founded", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["team", "Paris SG"], ["flag", ""], ["founded", ""], ["created_at", "2017-11-16 17:22:41.474109"], ["updated_at", "2017-11-16 17:22:41.474109"]]
+  [1m[35m (1.1ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "teams" ("team", "flag", "founded", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["team", "Racing Strasburgo"], ["flag", ""], ["founded", ""], ["created_at", "2017-11-16 17:22:41.478780"], ["updated_at", "2017-11-16 17:22:41.478780"]]
+  [1m[35m (1.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "teams" ("team", "flag", "founded", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["team", "Rennes"], ["flag", ""], ["founded", ""], ["created_at", "2017-11-16 17:22:41.482631"], ["updated_at", "2017-11-16 17:22:41.482631"]]
+  [1m[35m (1.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "teams" ("team", "flag", "founded", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["team", "Saint-Étienne"], ["flag", ""], ["founded", ""], ["created_at", "2017-11-16 17:22:41.486109"], ["updated_at", "2017-11-16 17:22:41.486109"]]
+  [1m[35m (1.5ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "teams" ("team", "flag", "founded", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["team", "Tolosa"], ["flag", ""], ["founded", ""], ["created_at", "2017-11-16 17:22:41.489734"], ["updated_at", "2017-11-16 17:22:41.489734"]]
+  [1m[35m (1.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "teams" ("team", "flag", "founded", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["team", "Troyes"], ["flag", ""], ["founded", ""], ["created_at", "2017-11-16 17:22:41.493331"], ["updated_at", "2017-11-16 17:22:41.493331"]]
+  [1m[35m (1.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.5ms)[0m  [1m[32mINSERT INTO "teams" ("team", "flag", "founded", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["team", "Amburgo"], ["flag", ""], ["founded", ""], ["created_at", "2017-11-16 17:22:41.816297"], ["updated_at", "2017-11-16 17:22:41.816297"]]
+  [1m[35m (1.6ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.6ms)[0m  [1m[32mINSERT INTO "teams" ("team", "flag", "founded", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["team", "Augusta"], ["flag", ""], ["founded", ""], ["created_at", "2017-11-16 17:22:41.821354"], ["updated_at", "2017-11-16 17:22:41.821354"]]
+  [1m[35m (1.6ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.6ms)[0m  [1m[32mINSERT INTO "teams" ("team", "flag", "founded", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["team", "Bayer"], ["flag", ""], ["founded", ""], ["created_at", "2017-11-16 17:22:41.826616"], ["updated_at", "2017-11-16 17:22:41.826616"]]
+  [1m[35m (1.5ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.5ms)[0m  [1m[32mINSERT INTO "teams" ("team", "flag", "founded", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["team", "Bayern"], ["flag", ""], ["founded", ""], ["created_at", "2017-11-16 17:22:41.831722"], ["updated_at", "2017-11-16 17:22:41.831722"]]
+  [1m[35m (1.5ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.6ms)[0m  [1m[32mINSERT INTO "teams" ("team", "flag", "founded", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["team", "Bor Dortmund"], ["flag", ""], ["founded", ""], ["created_at", "2017-11-16 17:22:41.836647"], ["updated_at", "2017-11-16 17:22:41.836647"]]
+  [1m[35m (1.5ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.6ms)[0m  [1m[32mINSERT INTO "teams" ("team", "flag", "founded", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["team", "Colonia"], ["flag", ""], ["founded", ""], ["created_at", "2017-11-16 17:22:41.841698"], ["updated_at", "2017-11-16 17:22:41.841698"]]
+  [1m[35m (1.7ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.6ms)[0m  [1m[32mINSERT INTO "teams" ("team", "flag", "founded", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["team", "Eintracht"], ["flag", ""], ["founded", ""], ["created_at", "2017-11-16 17:22:41.847283"], ["updated_at", "2017-11-16 17:22:41.847283"]]
+  [1m[35m (1.5ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.7ms)[0m  [1m[32mINSERT INTO "teams" ("team", "flag", "founded", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["team", "Friburgo"], ["flag", ""], ["founded", ""], ["created_at", "2017-11-16 17:22:41.852645"], ["updated_at", "2017-11-16 17:22:41.852645"]]
+  [1m[35m (1.5ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.6ms)[0m  [1m[32mINSERT INTO "teams" ("team", "flag", "founded", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["team", "Hannover"], ["flag", ""], ["founded", ""], ["created_at", "2017-11-16 17:22:41.858404"], ["updated_at", "2017-11-16 17:22:41.858404"]]
+  [1m[35m (1.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (18.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "teams" ("team", "flag", "founded", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["team", "Hertha"], ["flag", ""], ["founded", ""], ["created_at", "2017-11-16 17:22:41.881482"], ["updated_at", "2017-11-16 17:22:41.881482"]]
+  [1m[35m (1.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "teams" ("team", "flag", "founded", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["team", "Hoffenheim"], ["flag", ""], ["founded", ""], ["created_at", "2017-11-16 17:22:41.886149"], ["updated_at", "2017-11-16 17:22:41.886149"]]
+  [1m[35m (1.5ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "teams" ("team", "flag", "founded", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["team", "Lipsia"], ["flag", ""], ["founded", ""], ["created_at", "2017-11-16 17:22:41.889875"], ["updated_at", "2017-11-16 17:22:41.889875"]]
+  [1m[35m (1.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "teams" ("team", "flag", "founded", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["team", "M'Gladbach"], ["flag", ""], ["founded", ""], ["created_at", "2017-11-16 17:22:41.893987"], ["updated_at", "2017-11-16 17:22:41.893987"]]
+  [1m[35m (1.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "teams" ("team", "flag", "founded", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["team", "Magonza"], ["flag", ""], ["founded", ""], ["created_at", "2017-11-16 17:22:41.897914"], ["updated_at", "2017-11-16 17:22:41.897914"]]
+  [1m[35m (1.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "teams" ("team", "flag", "founded", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["team", "Schalke"], ["flag", ""], ["founded", ""], ["created_at", "2017-11-16 17:22:41.901311"], ["updated_at", "2017-11-16 17:22:41.901311"]]
+  [1m[35m (1.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "teams" ("team", "flag", "founded", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["team", "Stoccarda"], ["flag", ""], ["founded", ""], ["created_at", "2017-11-16 17:22:41.904722"], ["updated_at", "2017-11-16 17:22:41.904722"]]
+  [1m[35m (1.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "teams" ("team", "flag", "founded", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["team", "Werder"], ["flag", ""], ["founded", ""], ["created_at", "2017-11-16 17:22:41.908011"], ["updated_at", "2017-11-16 17:22:41.908011"]]
+  [1m[35m (1.7ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "teams" ("team", "flag", "founded", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["team", "Wolfsburg"], ["flag", ""], ["founded", ""], ["created_at", "2017-11-16 17:22:41.912215"], ["updated_at", "2017-11-16 17:22:41.912215"]]
+  [1m[35m (1.5ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.5ms)[0m  [1m[32mINSERT INTO "teams" ("team", "flag", "founded", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["team", "Alaves"], ["flag", ""], ["founded", "1921"], ["created_at", "2017-11-16 17:22:42.194965"], ["updated_at", "2017-11-16 17:22:42.194965"]]
+  [1m[35m (1.5ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.4ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.5ms)[0m  [1m[32mINSERT INTO "teams" ("team", "flag", "founded", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["team", "Athletic"], ["flag", ""], ["founded", "1898"], ["created_at", "2017-11-16 17:22:42.200162"], ["updated_at", "2017-11-16 17:22:42.200162"]]
+  [1m[35m (1.7ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.6ms)[0m  [1m[32mINSERT INTO "teams" ("team", "flag", "founded", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["team", "Atl. Madrid"], ["flag", ""], ["founded", "1903"], ["created_at", "2017-11-16 17:22:42.205234"], ["updated_at", "2017-11-16 17:22:42.205234"]]
+  [1m[35m (1.5ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.8ms)[0m  [1m[32mINSERT INTO "teams" ("team", "flag", "founded", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["team", "Barcellona"], ["flag", ""], ["founded", "1899"], ["created_at", "2017-11-16 17:22:42.210501"], ["updated_at", "2017-11-16 17:22:42.210501"]]
+  [1m[35m (1.5ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.5ms)[0m  [1m[32mINSERT INTO "teams" ("team", "flag", "founded", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["team", "Betis Balompie"], ["flag", ""], ["founded", "1907"], ["created_at", "2017-11-16 17:22:42.216765"], ["updated_at", "2017-11-16 17:22:42.216765"]]
+  [1m[35m (1.5ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.5ms)[0m  [1m[32mINSERT INTO "teams" ("team", "flag", "founded", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["team", "Celta Vigo"], ["flag", ""], ["founded", "1923"], ["created_at", "2017-11-16 17:22:42.221744"], ["updated_at", "2017-11-16 17:22:42.221744"]]
+  [1m[35m (1.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.5ms)[0m  [1m[32mINSERT INTO "teams" ("team", "flag", "founded", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["team", "Deportivo"], ["flag", ""], ["founded", "1906"], ["created_at", "2017-11-16 17:22:42.226770"], ["updated_at", "2017-11-16 17:22:42.226770"]]
+  [1m[35m (1.6ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.5ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.9ms)[0m  [1m[32mINSERT INTO "teams" ("team", "flag", "founded", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["team", "Eibar"], ["flag", ""], ["founded", "1940"], ["created_at", "2017-11-16 17:22:42.232723"], ["updated_at", "2017-11-16 17:22:42.232723"]]
+  [1m[35m (1.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.5ms)[0m  [1m[32mINSERT INTO "teams" ("team", "flag", "founded", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["team", "Espanyol"], ["flag", ""], ["founded", "1900"], ["created_at", "2017-11-16 17:22:42.238442"], ["updated_at", "2017-11-16 17:22:42.238442"]]
+  [1m[35m (1.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (1.0ms)[0m  [1m[32mINSERT INTO "teams" ("team", "flag", "founded", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["team", "Getafe"], ["flag", ""], ["founded", ""], ["created_at", "2017-11-16 17:22:42.242964"], ["updated_at", "2017-11-16 17:22:42.242964"]]
+  [1m[35m (0.6ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (2.2ms)[0m  [1m[32mINSERT INTO "teams" ("team", "flag", "founded", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["team", "Girona"], ["flag", ""], ["founded", ""], ["created_at", "2017-11-16 17:22:42.260079"], ["updated_at", "2017-11-16 17:22:42.260079"]]
+  [1m[35m (1.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.5ms)[0m  [1m[32mINSERT INTO "teams" ("team", "flag", "founded", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["team", "Las Palmas"], ["flag", ""], ["founded", "1949"], ["created_at", "2017-11-16 17:22:42.280801"], ["updated_at", "2017-11-16 17:22:42.280801"]]
+  [1m[35m (1.7ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.5ms)[0m  [1m[32mINSERT INTO "teams" ("team", "flag", "founded", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["team", "Leganes"], ["flag", ""], ["founded", "1928"], ["created_at", "2017-11-16 17:22:42.286064"], ["updated_at", "2017-11-16 17:22:42.286064"]]
+  [1m[35m (1.6ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.5ms)[0m  [1m[32mINSERT INTO "teams" ("team", "flag", "founded", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["team", "Levante"], ["flag", ""], ["founded", ""], ["created_at", "2017-11-16 17:22:42.291348"], ["updated_at", "2017-11-16 17:22:42.291348"]]
+  [1m[35m (1.5ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.6ms)[0m  [1m[32mINSERT INTO "teams" ("team", "flag", "founded", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["team", "Malaga"], ["flag", ""], ["founded", "1904"], ["created_at", "2017-11-16 17:22:42.296205"], ["updated_at", "2017-11-16 17:22:42.296205"]]
+  [1m[35m (1.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (1.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.8ms)[0m  [1m[32mINSERT INTO "teams" ("team", "flag", "founded", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["team", "Real Madrid"], ["flag", ""], ["founded", "1902"], ["created_at", "2017-11-16 17:22:42.302528"], ["updated_at", "2017-11-16 17:22:42.302528"]]
+  [1m[35m (0.6ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.5ms)[0m  [1m[32mINSERT INTO "teams" ("team", "flag", "founded", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["team", "Real Sociedad"], ["flag", ""], ["founded", "1909"], ["created_at", "2017-11-16 17:22:42.308084"], ["updated_at", "2017-11-16 17:22:42.308084"]]
+  [1m[35m (1.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.8ms)[0m  [1m[32mINSERT INTO "teams" ("team", "flag", "founded", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["team", "Siviglia"], ["flag", ""], ["founded", "1890"], ["created_at", "2017-11-16 17:22:42.313123"], ["updated_at", "2017-11-16 17:22:42.313123"]]
+  [1m[35m (1.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.6ms)[0m  [1m[32mINSERT INTO "teams" ("team", "flag", "founded", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["team", "Valencia"], ["flag", ""], ["founded", "1919"], ["created_at", "2017-11-16 17:22:42.318607"], ["updated_at", "2017-11-16 17:22:42.318607"]]
+  [1m[35m (1.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "teams" ("team", "flag", "founded", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["team", "Villarreal"], ["flag", ""], ["founded", "1923"], ["created_at", "2017-11-16 17:22:42.322838"], ["updated_at", "2017-11-16 17:22:42.322838"]]
+  [1m[35m (1.2ms)[0m  [1m[35mCOMMIT[0m
+  Rendering teams/index.html.erb within layouts/application
+  Rendered teams/index.html.erb within layouts/application (28.8ms)
+Completed 200 OK in 2045ms (Views: 68.4ms | ActiveRecord: 231.6ms)
+
+

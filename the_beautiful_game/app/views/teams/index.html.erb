@@ -2,25 +2,40 @@
 
 
 
+
 <% @teams.each do |team|%>
 
 
-<div class="bundesliga">
+
+<div class="teams">
 
 <h3><%= link_to(team[:team], team_path(team) ) %></h3>
-<h3> <%= image_tag team[:flag] %></h3>
+
+<img src="https://upload.wikimedia.org/wikipedia/en/thumb/b/b5/UEFA_logo.svg/1024px-UEFA_logo.svg.png">
 
 <p>Founded: <%=  team[:founded] %></p>
 
 
-<p><%= link_to 'Delete Team', team, :method => 'delete' %></p>
 </div>
 
 
 <% end %>
 
 
-<h2>Premier League </h2>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- <h2>Premier League </h2>
 
 
 
@@ -28,15 +43,17 @@
 
 
 
-<%= teams_prem %>
+
 <div class="premier">
-<h3><%= link_to(teams_prem[:prem_name], team_path(@teams) ) %></h3>
+
+<h3><%= link_to(teams_prem[:prem_name], teams_prem ) %></h3>
+
 <h3> <%=  image_tag teams_prem[:prem_flag] %></h3>
 
 <p>Founded: <%=  teams_prem[:prem_founded] %></p>
 
 
-<p><%= link_to 'Delete Team', teams_prem, :method => 'delete' %></p>
+
 </div>
 
 <% end %>
@@ -55,7 +72,7 @@
 <p>Founded: <%=  teams_liga[:liga_founded] %></p>
 
 
-<p><%= link_to 'Delete Team', teams_liga, :method => 'delete' %></p>
+
 </div>
 
 <% end %>
@@ -72,7 +89,7 @@
 <p>Founded: <%=  teams[:founded] %></p>
 
 
-<p><%= link_to 'Delete Team', teams, :method => 'delete' %></p>
+
 </div>
 
 
@@ -91,7 +108,6 @@
 <p>Founded: <%=  teams_ligue[:ligue_founded] %></p>
 
 
-<p><%= link_to 'Delete Team', teams_ligue, :method => 'delete' %></p>
 </div>
 
 
@@ -110,7 +126,6 @@
 <p>Founded: <%=  teams_bund[:bund_founded] %></p>
 
 
-<p><%= link_to 'Delete Team', teams_bund, :method => 'delete' %></p>
 </div>
 
 
@@ -125,3 +140,4 @@
 
 
 
+ -->

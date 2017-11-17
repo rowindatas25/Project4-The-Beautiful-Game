@@ -1,0 +1,22 @@
+<span><%= link_to 'Add Team', new_team_path%></span>
+<span><%= link_to 'All Teams', teams_path%></span>
+
+
+
+<% @teams.each do |team|%>
+
+
+
+<div class="teams">
+
+<h3><%= link_to(team[:team], team_path(team) ) %></h3>
+
+
+
+<p>Founded: <%=  team[:founded] %></p>
+<p> Favorite Moment: <%= team[:moments] %></p>
+
+</div>
+
+<p><%= link_to('Edit Team', edit_team_path) %></p>
+<% end %>

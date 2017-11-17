@@ -7,6 +7,7 @@ class ProfilesController < ApplicationController
 		else
 			redirect_to teams_path
 	end
+end
 
 
 	def index
@@ -28,7 +29,7 @@ class ProfilesController < ApplicationController
 	private
 
 	def team_params
-		params.require(:team).permit(:team, :team_id, :flag, :founded, :moments)
+		params.require(:profile).permit(:team, :team_id, :flag, :founded, :moments)
 	end
 
 end

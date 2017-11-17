@@ -2,14 +2,12 @@
 
 one:
   team: MyString
-  team_id: MyString
   flag: MyString
   founded: MyString
   moments: MyString
 
 two:
   team: MyString
-  team_id: MyString
   flag: MyString
   founded: MyString
   moments: MyString

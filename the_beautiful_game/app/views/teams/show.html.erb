@@ -1,7 +1,22 @@
 <span><%= link_to 'All Teams', teams_path%></span>
-<h4><%= image_tag @team.flag %></h4>
-<h3><%= @team.team %></h3>
-<p>Founded: <%= @team.founded %></p>
-<p><%= @team.moments %></p>
 
-<!--  -->
+
+
+<div>
+  <h3><%= @team[:team] %></h3>
+ <img src="https://upload.wikimedia.org/wikipedia/en/thumb/b/b5/UEFA_logo.svg/1024px-UEFA_logo.svg.png">
+	<br>
+  <p> Founded: <%=@team[:founded] %></p>
+	<p> Favorite Moment: <%= link_to("Golazo", @team[:moments] ) %></p>
+
+
+  <%= form_for :profile, url: profiles_path do |f| %>
+    <%= f.hidden_field @team[:team], value: @team[:team] %>
+    <%= f.hidden_field @team[:flag], value: @team[:flag] %>
+    <%= f.submit "Save Team" %>
+  <% end %>
+</div>
+
+
+
+<p><%= link_to 'Delete Team', @team, :method => 'delete' %></p>

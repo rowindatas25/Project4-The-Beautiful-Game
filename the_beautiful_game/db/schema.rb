@@ -10,14 +10,13 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20171116193122) do
+ActiveRecord::Schema.define(version: 20171116220700) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
 
   create_table "profiles", force: :cascade do |t|
     t.string "team"
-    t.string "team_id"
     t.string "flag"
     t.string "founded"
     t.string "moments"
@@ -27,7 +26,6 @@ ActiveRecord::Schema.define(version: 20171116193122) do
 
   create_table "teams", force: :cascade do |t|
     t.string "team"
-    t.integer "team_id"
     t.string "flag"
     t.string "founded"
     t.string "moments"

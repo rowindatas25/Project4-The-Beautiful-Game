@@ -1,13 +1,14 @@
 class ProfilesController < ApplicationController
 
 	def create
-		@team = Profile.new(team_params)
-		if @team.save
+
+		@profile = Profile.new(profile_params)
+		if @profile.save
 			redirect_to profiles_path
 		else
-			redirect_to teams_path
+			redirect_to team_path
+		end
 	end
-end
 
 
 	def index
@@ -28,8 +29,8 @@ end
 
 	private
 
-	def team_params
-		params.require(:profile).permit(:team, :team_id, :flag, :founded, :moments)
+	def profile_params
+		params.require(:profile).permit(:team, :flag, :founded, :moment_title, :moments)
 	end
 
 end

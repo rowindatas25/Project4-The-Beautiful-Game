@@ -1,4 +1,6 @@
-<h1>Create Your Account</h1>
+<h1>The Beautiful Game</h1>
+
+<h3>Create Your Account</h3>
 
 <div class="user_form">
 <%= form_for (@user) do |form| %>
@@ -17,7 +19,7 @@
 <%= form.password_field :password_confirmation %> <br><br>
 
 <%= form.submit("Create Your Account") %>
-<p><%= button_to('Log In', "/sessions/login") %></p>
+<p><%= button_to('Log In', login_path) %></p>
 <% end %>
 
 </div>

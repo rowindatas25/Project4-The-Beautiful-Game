@@ -4,10 +4,12 @@ one:
   team: MyString
   flag: MyString
   founded: MyString
+  moment_title: MyString
   moments: MyString
 
 two:
   team: MyString
   flag: MyString
   founded: MyString
+  moment_title: MyString
   moments: MyString

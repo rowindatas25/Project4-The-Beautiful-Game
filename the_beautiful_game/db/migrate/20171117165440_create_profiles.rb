@@ -1,9 +1,10 @@
-class CreateTeams < ActiveRecord::Migration[5.1]
+class CreateProfiles < ActiveRecord::Migration[5.1]
   def change
-    create_table :teams do |t|
+    create_table :profiles do |t|
       t.string :team
       t.string :flag
       t.string :founded
+      t.string :moment_title
       t.string :moments
 
       t.timestamps

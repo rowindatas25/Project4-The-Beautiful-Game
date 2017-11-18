@@ -1,5 +1,5 @@
-<span><%= link_to 'Add Team', new_team_path%></span>
-<span><%= link_to 'All Teams', teams_path%></span>
+<span><%= link_to 'Add Team', new_team_path %></span>
+<span><%= link_to 'All Teams', teams_path %></span>
 
 
 
@@ -9,14 +9,21 @@
 
 <div class="teams">
 
-<h3><%= link_to(team[:team], team_path(team) ) %></h3>
 
-
+<%= team[:team] %>
 
 <p>Founded: <%=  team[:founded] %></p>
+
+<p> <%= image_tag team[:flag] %>	</p>
+
+<p>Moment Title: <%= team[:moment_title]%></p>
+
 <p> Favorite Moment: <%= team[:moments] %></p>
 
 </div>
 
-<p><%= link_to('Edit Team', edit_team_path) %></p>
+
+<p><%= button_to 'Delete Team', teams_path, :method => 'delete' %></p>
+
+
 <% end %>

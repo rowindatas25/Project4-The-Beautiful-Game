@@ -1,24 +1,26 @@
 
 
 
-<span><%= link_to 'Add Team', new_team_path%></span>
+<span class="new-team"><%= link_to 'Add Team', new_team_path%></span>
 
 
 
+<div class="container">
+
+	<div class="teams">
 
 <% @teams.each do |team|%>
 
 
 
-<div class="teams">
 
-<h3><%= link_to(team[:team], team_path(team) ) %></h3>
+<div class ="team"><h3><%= link_to(team[:team], team_path(team) ) %></h3>
 
 <p><%= image_tag team[:flag] %></p>
-<p>Founded: <%=  team[:founded] %></p>
+<p>Founded: <%=  team[:founded] %></p></div>
 
 
-</div>
+
 
 
 
@@ -26,7 +28,9 @@
 <% end %>
 
 
+</div>
 
+</div>
 
 
 

@@ -1,4 +1,8 @@
-<h1>Log In</h1>
+
+<body>
+
+
+<h3>Log In</h3>
 
 <%= form_for(:session, url: login_path) do |form| %>
 <%= form.label :email %> <br>
@@ -9,7 +13,11 @@
 
 <%= form.submit("Log In") %>
 
-<p><%= button_to('Sign Up', signup_path) %></p>
+
 
 
 <% end %>
+
+
+
+</body>

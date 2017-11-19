@@ -6,6 +6,7 @@ one:
   founded: MyString
   moment_title: MyString
   moments: MyString
+  user_id: 1
 
 two:
   team: MyString
@@ -13,3 +14,4 @@ two:
   founded: MyString
   moment_title: MyString
   moments: MyString
+  user_id: 1

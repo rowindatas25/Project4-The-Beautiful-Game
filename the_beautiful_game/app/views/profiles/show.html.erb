@@ -1,0 +1,23 @@
+<span><%= link_to 'All Teams', teams_path%></span>
+
+
+
+<div>
+  <h3><%= @team[:team] %></h3>
+ 	<p><%= image_tag @team[:flag]	%></p>
+	<br>
+  <p> Founded: <%=@team[:founded] %></p>
+  
+	<p>	Moment Title: <%= @team[:moment_title] %>
+	<p> Favorite Moment: <%= link_to(@team[:moment_title], @team[:moments] ) %> </p>
+
+	<%= form_for(:profile, url: profiles_path, method: 'post') do |f| %>
+    <%= f.hidden_field :team, value: @team[:team] %>
+    <%= f.hidden_field :flag, value: @team[:flag] %>
+    <%= f.hidden_field :founded, value: @team[:founded] %>
+     <%= f.hidden_field :moment_title, value: @team[:moment_title] %>
+      <%= f.hidden_field :moments, value: @team[:moments] %>
+      <%= f.hidden_field :user_id, value: @current_user.id %>a
+
+    <%= f.submit "Save Team" %>
+  <% end %>

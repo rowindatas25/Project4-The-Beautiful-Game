@@ -12,25 +12,31 @@ class ProfilesController < ApplicationController
 
 
 	def index
-		@teams = Profile.all
+		@user = @current_user.id
+		@profiles = Profile.where(user_id: @user)
 	end
 
 
 	def show
+		@user = @current_user.id
+		@profile = Profile.where( user_id: @user, id: params[:id])
+	end
+
+	def edit
 		@team = Profile.find(params[:id])
 	end
 
 
 	def destroy
-		@team = Fight.find(params[:id])
+		@team = Profile.find(params[:id])
 		@team.destroy
-		redirect_to teams_path
+		redirect_to profiles_path
 	end
 
 	private
 
 	def profile_params
-		params.require(:profile).permit(:team, :flag, :founded, :moment_title, :moments)
+		params.require(:profile).permit(:team, :flag, :founded, :moment_title, :moments, :user_id)
 	end
 
 end

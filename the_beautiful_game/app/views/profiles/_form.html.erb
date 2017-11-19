@@ -1,0 +1,9 @@
+
+
+<%= form_for @team do |form| %>
+	Team: <%= form.text_field :team %></br>
+	Founded: <%= form.text_field :founded %></br>
+	Moment Title: <%= form.text_field :moment_title %></br>
+	Favorite Moment: <%= form.url_field :moments %></br>
+	<%= form.submit %>
+	<% end %>

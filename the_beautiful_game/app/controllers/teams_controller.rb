@@ -9,6 +9,8 @@ class TeamsController < ApplicationController
 
 	def show 
 		@team = Team.find(params[:id])
+		url = @team.youtube_id
+		@team_url = url.split("/").last.split("=").last
 	end
 
 

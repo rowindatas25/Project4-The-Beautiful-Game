@@ -13,6 +13,7 @@ module TheBeautifulGame
 
     config.assets.paths << Rails.root.join("app", "assets", "fonts")
 
+    config.assets.paths << "#{Rails.root}/app/assets/videos"
 
     # Settings in config/environments/* take precedence over those specified here.
     # Application configuration should go into files in config/initializers

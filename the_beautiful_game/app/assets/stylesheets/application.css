@@ -30,6 +30,7 @@ h1 {
 h3 {
 	font-size: 25px;
 	color: #002B49;
+
 }
 
 .container {
@@ -71,6 +72,7 @@ span.new-team, span.all-teams, span.edit-team {
   padding: 40px;
   max-width: 300px;
   margin: 0 auto;
+  margin-bottom: 50px;
   background-color: #3498db;
   box-shadow: 0pt 2px 5px rgba(105, 108, 109,  0.7),	
 		0px 0px 8px 5px rgba(208, 223, 226, 0.4) outset;
@@ -192,12 +194,22 @@ img {
 	max-height: 100px;
 }
 
+img.game {
+	max-width: 500px;
+	max-height: 500px;
+}
 
+.style_image {
+	min-width: 500px;
+	max-height: 275px;
+	border-radius: 10px;
+}
 
 p {
 	text-align: center;
 	font-family: 'Roboto Slab', serif;
 	color: #002B49;
+
 }
 
 a {
@@ -241,7 +253,6 @@ div.team {
   -webkit-border-radius: 28;
   -moz-border-radius: 28;
   border-radius: 20px;
- 	font-family: 'Source Sans Pro', sans-serif;
   color: black;
   font-size: 18px;
   padding: 20px 20px 20px 20px;
@@ -303,12 +314,12 @@ div.team {
 
 
 div.team-show {
-
+	font-family: 'Roboto Slab', serif;
 	display: flex;
 	flex-direction: column;
 	flex-wrap: wrap;
 	min-width: 400px;
-	max-height: 550px;
+	max-height: 750px;
   background: #3498db;
   background-image: -webkit-linear-gradient(top, #3498db, #2980b9);
   background-image: -moz-linear-gradient(top, #3498db, #2980b9);
@@ -318,12 +329,12 @@ div.team-show {
   -webkit-border-radius: 28;
   -moz-border-radius: 28;
   border-radius: 20px;
- 	font-family: 'Source Sans Pro', sans-serif;
   color: black;
   font-size: 18px;
   padding: 20px 20px 20px 20px;
   text-decoration: none;
   margin-top: 15px;
+  margin-left: 10px;
 }
 
  {
@@ -334,6 +345,16 @@ div.team-show {
   background-image: -o-linear-gradient(top, #3cb0fd, #3498db);
   background-image: linear-gradient(to bottom, #3cb0fd, #3498db);
   text-decoration: none;
+}
+
+iframe {
+	display: flex;
+	flex-wrap: column;
+	flex-wrap: wrap;
+	min-width: 300px;
+	max-height: 300px;
+	margin-left: 50px;
+	padding-top: 50px;
 }
 
 div.profile-index {

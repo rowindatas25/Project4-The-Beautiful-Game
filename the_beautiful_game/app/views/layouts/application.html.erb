@@ -12,10 +12,11 @@
 
   <body class="logout">
   	<div class="nav">
-  	<%= link_to("Log In", login_path) %><br>
-    <%= link_to("Sign Up", signup_path) %><br>
-  	<%= link_to("Logout", logout_path, method: "delete") %> <br>
+  	<span class="log-in"><%= link_to("Log In", login_path) %></span><br>
+    <span class="sign-up"><%= link_to("Sign Up", signup_path) %></span><br>
+  	<span class="log-out"><%= link_to("Logout", logout_path, method: "delete") %></span> <br>
+  	 </div>
     <%= yield %>
-    </div>
+
   </body>
 </html>

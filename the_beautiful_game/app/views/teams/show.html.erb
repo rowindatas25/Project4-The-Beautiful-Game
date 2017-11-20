@@ -1,22 +1,22 @@
 
 
 
-<span><%= link_to 'All Teams', teams_path%></span>
+<span class="all-teams"><%= link_to 'All Teams', teams_path%></span>
 
 
 
 <div>
 
 <div class="teams">
-  <div class="team-show"><h2><%= @team[:team] %></h2>
- 	<h2><%= image_tag @team[:flag]	%></h2>
+  <div class="team-show"><h3><%= @team[:team] %></h3>
+ 	<h3><%= image_tag @team[:flag]	%></h3>
 	<br>
-  <h2> Founded: <%=@team[:founded] %></h2>
+  <h3> Founded: <%=@team[:founded] %></h3>
   <br>
-	<h2>	Moment Title: <%= @team[:moment_title] %>
+	<h3>	Moment Title: <%= @team[:moment_title] %>
 		<br>
-	<h2> Favorite Moment: <%= link_to(@team[:moment_title], @team[:moments] ) %> 
-</h2></div>
+	<h3> Favorite Moment: <%= link_to(@team[:moment_title], @team[:moments] ) %> 
+</h3></div>
 	</div>
 
  <!-- <div id="player"></div>

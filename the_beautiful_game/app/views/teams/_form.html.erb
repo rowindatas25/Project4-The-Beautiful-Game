@@ -1,11 +1,22 @@
 
 <div class="form">
+		
 <%= form_for @team do |form| %>
-	Team: <%= form.text_field :team %></br>
-	Founded: <%= form.text_field :founded %></br>
-		Crest: <%= form.file_field :flag %></br>
-	Moment Title: <%= form.text_field :moment_title %></br>
-	Favorite Moment: <%= form.url_field :moments %></br>
+		<div class="form-input">
+	Team: <%= form.text_field :team %><br>
+		</div>
+		<div class="form-input">
+	Founded: <%= form.text_field :founded %><br>
+		</div>
+		<div class="form-input">
+		Crest: <%= form.text_field :flag %><br>
+	</div>
+		<div class="form-input">
+	Moment Title: <%= form.text_field :moment_title %><br>
+		</div>
+		<div class="form-input">
+	Favorite Moment: <%= form.url_field :moments %><br>
+		</div>
 	<%= form.submit %>
 	<% end %>
 	</div>

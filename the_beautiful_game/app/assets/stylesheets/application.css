@@ -23,14 +23,28 @@
 
 h1 {
 	text-align: center;
-	color: #000000;
-	font-family: 'Source Sans Pro', sans-serif;
+	color: #002B49;
+	font-family: 'Roboto Slab', serif;
+}
+
+h3 {
+	font-size: 25px;
+	color: #002B49;
 }
 
 .container {
 	display: flex;
 	
 }
+
+span.new-team, span.all-teams, span.edit-team {
+	display: flex;
+	justify-content: center;
+	padding-top: 10px;
+	margin-right: 5px;
+}
+
+
 
 .user-input {
 	border-radius: 5px;
@@ -46,6 +60,7 @@ h1 {
 }
 
 .user_form {
+	font-family: 'Roboto Slab', serif;
 	display: -webkit-flex;
   display: -ms-flex;
   display: flex;
@@ -69,7 +84,42 @@ h1 {
   text-decoration: none;
 }
 		
-   
+.form {
+  display: -webkit-flex;
+  display: -ms-flex;
+  display: flex;
+  justify-content: center;
+  webkit-flex-direction: column;
+  ms-flex-direction: column;
+  flex-direction: column;
+  padding: 40px;
+  min-height: 200px;
+  max-width: 500px;
+  margin: 0 auto;
+  background-color: #3498db;
+  box-shadow: 0pt 2px 5px rgba(105, 108, 109,  0.7),	
+		0px 0px 8px 5px rgba(208, 223, 226, 0.4) outset;
+	border-radius: 5px;
+  background: #04471C;
+  background-image: -webkit-linear-gradient(top, #3cb0fd, #3498db);
+  background-image: -moz-linear-gradient(top, #3cb0fd, #3498db);
+  background-image: -ms-linear-gradient(top, #3cb0fd, #3498db);
+  background-image: -o-linear-gradient(top, #3cb0fd, #3498db);
+  background-image: linear-gradient(to bottom, #3cb0fd, #3498db);
+  text-decoration: none;
+ }
+
+.form-input {
+	border-radius: 5px;
+	max-width: 200px;
+	display: -webkit-flex;
+  display: -ms-flex;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  margin-left: 150px;
+}
 
 
 .login-form {
@@ -113,7 +163,15 @@ h1 {
 
 
 .nav {
-	justify-content: space-around;
+	display: flex;
+	justify-content: space-between;
+	flex-direction: row;
+	flex-wrap: wrap;
+	
+}
+
+span.log-in, span.log-out, span.sign-up {
+	margin-left: 145px;
 
 }
 
@@ -138,15 +196,16 @@ img {
 
 p {
 	text-align: center;
-	font-family: 'Source Sans Pro', sans-serif;
+	font-family: 'Roboto Slab', serif;
+	color: #002B49;
 }
 
 a {
 
 	text-decoration: none;
-	color: #000000;
+	color: #002B49;
 	text-align: center;
-	font-family: 'Source Sans Pro', sans-serif;
+	font-family: 'Roboto Slab', serif;
 	justify-content: space-between;
 }
 
@@ -162,28 +221,7 @@ div.divider {
 	border: 1px solid black;
 }
 
-.form{
-   display: -webkit-flex;
-   display: -ms-flex;
-   display: flex;
-   -webkit-flex-direction: column;
-   -ms-flex-direction: column;
-   flex-direction: column;
-   border-radius: 5px;
-   padding: 40px;
-   max-width: 700px;
-   margin: 0 auto;
-   background-color: #3498db;
-   box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
-   background: #04471C;
-   background-image: -webkit-linear-gradient(top, #3cb0fd, #3498db);
-   background-image: -moz-linear-gradient(top, #3cb0fd, #3498db);
-   background-image: -ms-linear-gradient(top, #3cb0fd, #3498db);
-   background-image: -o-linear-gradient(top, #3cb0fd, #3498db);
-   background-image: linear-gradient(to bottom, #3cb0fd, #3498db);
-   text-decoration: none;
 
- }
 
 
 div.team {
@@ -285,6 +323,7 @@ div.team-show {
   font-size: 18px;
   padding: 20px 20px 20px 20px;
   text-decoration: none;
+  margin-top: 15px;
 }
 
  {
@@ -295,6 +334,41 @@ div.team-show {
   background-image: -o-linear-gradient(top, #3cb0fd, #3498db);
   background-image: linear-gradient(to bottom, #3cb0fd, #3498db);
   text-decoration: none;
+}
+
+div.profile-index {
+
+	display: flex;
+	flex-direction: column;
+	flex-wrap: wrap;
+	min-width: 400px;
+	max-height: 550px;
+  background: #3498db;
+  background-image: -webkit-linear-gradient(top, #3498db, #2980b9);
+  background-image: -moz-linear-gradient(top, #3498db, #2980b9);
+  background-image: -ms-linear-gradient(top, #3498db, #2980b9);
+  background-image: -o-linear-gradient(top, #3498db, #2980b9);
+  background-image: linear-gradient(to bottom, #3498db, #2980b9);
+  -webkit-border-radius: 28;
+  -moz-border-radius: 28;
+  border-radius: 20px;
+ 	font-family: 'Source Sans Pro', sans-serif;
+  color: black;
+  font-size: 18px;
+  padding: 20px 20px 20px 20px;
+  text-decoration: none;
+}
+
+ {
+  background: #04471C;
+  background-image: -webkit-linear-gradient(top, #3cb0fd, #3498db);
+  background-image: -moz-linear-gradient(top, #3cb0fd, #3498db);
+  background-image: -ms-linear-gradient(top, #3cb0fd, #3498db);
+  background-image: -o-linear-gradient(top, #3cb0fd, #3498db);
+  background-image: linear-gradient(to bottom, #3cb0fd, #3498db);
+  text-decoration: none;
+}
+
 }
 
 

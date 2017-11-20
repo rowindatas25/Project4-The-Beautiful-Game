@@ -1,4 +1,5 @@
 <span><%= link_to 'Add Team', new_team_path %></span>
+<br>
 <span><%= link_to 'All Teams', teams_path %></span>
 
 
@@ -20,7 +21,7 @@
 
 <p> Favorite Moment: <%= team[:moments] %></p>
 
-<div id="player"></div>
+<!-- <div id="player"></div>
 
     <script>
       // 2. This code loads the IFrame Player API code asynchronously.
@@ -64,9 +65,10 @@
         player.stopVideo();
       }
     </script>
-
+ -->
 </div>
 
+<p><%= link_to 'Edit Team', edit_profile_path %></p>
 
 <p><%= button_to 'Delete Team', team, :method => 'delete' %></p>
 

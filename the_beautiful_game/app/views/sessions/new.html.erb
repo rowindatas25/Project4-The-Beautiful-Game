@@ -4,20 +4,26 @@
 
 <h3>Log In</h3>
 
+	<div class="login-form">
+
+	<div class="login-input">
 <%= form_for(:session, url: login_path) do |form| %>
 <%= form.label :email %> <br>
 <%= form.email_field :email %> <br><br>
+	</div>
 
+
+	<div class="login-input">
 <%= form.label :password %> <br>
-<%= form.password_field :password %> <br><br>
+<%= form.password_field :password %> <br>
+	</div>
 
+	<div class="login-button">
 <%= form.submit("Log In") %>
-
-
-
+	</div>
 
 <% end %>
 
-
+</div>
 
 </body>

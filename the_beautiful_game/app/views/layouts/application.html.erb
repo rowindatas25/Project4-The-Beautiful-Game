@@ -11,9 +11,11 @@
 	<h1>The Beautiful Game</h1>
 
   <body class="logout">
+  	<div class="nav">
   	<%= link_to("Log In", login_path) %><br>
     <%= link_to("Sign Up", signup_path) %><br>
   	<%= link_to("Logout", logout_path, method: "delete") %> <br>
     <%= yield %>
+    </div>
   </body>
 </html>

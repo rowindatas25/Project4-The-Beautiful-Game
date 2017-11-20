@@ -1,5 +1,5 @@
 
- * This is a manifest file that'll be compiled into application.css, which will include all the files
+/* * This is a manifest file that'll be compiled into application.css, which will include all the files
  * listed below.
  *
  * Any CSS and SCSS file within this directory, lib/assets/stylesheets, or any plugin's
@@ -9,14 +9,17 @@
  * compiled file so the styles you add here take precedence over styles defined in any other CSS/SCSS
  * files in this directory. Styles in this file should be added after the last require_* statement.
  * It is generally better to create a new file per style scope.
- *= require hover
+
  *= require_tree .
  *= require_self
+ */
   
 
 
- 
+
+
 @import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro');
+@import url('https://fonts.googleapis.com/css?family=Roboto+Slab');
 
 h1 {
 	text-align: center;
@@ -29,9 +32,48 @@ h1 {
 	
 }
 
+.user-input {
+	border-radius: 5px;
+	max-width: 200px;
+	display: -webkit-flex;
+  display: -ms-flex;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  margin-left: 50px;
+
+}
+
 .user_form {
-	display: flex;
-	justify-content: center;
+	display: -webkit-flex;
+  display: -ms-flex;
+  display: flex;
+  justify-content: center;
+  webkit-flex-direction: column;
+  ms-flex-direction: column;
+  flex-direction: column;
+  padding: 40px;
+  max-width: 300px;
+  margin: 0 auto;
+  background-color: #3498db;
+  box-shadow: 0pt 2px 5px rgba(105, 108, 109,  0.7),	
+		0px 0px 8px 5px rgba(208, 223, 226, 0.4) outset;
+	border-radius: 5px;
+  background: #04471C;
+  background-image: -webkit-linear-gradient(top, #3cb0fd, #3498db);
+  background-image: -moz-linear-gradient(top, #3cb0fd, #3498db);
+  background-image: -ms-linear-gradient(top, #3cb0fd, #3498db);
+  background-image: -o-linear-gradient(top, #3cb0fd, #3498db);
+  background-image: linear-gradient(to bottom, #3cb0fd, #3498db);
+  text-decoration: none;
+}
+		
+   
+
+
+.login-form {
+
 	display: -webkit-flex;
   display: -ms-flex;
   display: flex;
@@ -39,17 +81,52 @@ h1 {
   ms-flex-direction: column;
   flex-direction: column;
   padding: 40px;
-  max-width: 700px;
+  max-width: 500px;
   margin: 0 auto;
-  background-color: #fff;
-  box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+  background-color: #3498db;
+  border: 3px ridge black;
+  box-shadow: 0pt 2px 5px rgba(105, 108, 109,  0.7),	
+		0px 0px 8px 5px rgba(208, 223, 226, 0.4) outset;
+	border-radius: 5px;
+  background: #04471C;
+  background-image: -webkit-linear-gradient(top, #3cb0fd, #3498db);
+  background-image: -moz-linear-gradient(top, #3cb0fd, #3498db);
+  background-image: -ms-linear-gradient(top, #3cb0fd, #3498db);
+  background-image: -o-linear-gradient(top, #3cb0fd, #3498db);
+  background-image: linear-gradient(to bottom, #3cb0fd, #3498db);
+  text-decoration: none;
 }
 
-.logout {
-	text-align: center;
+.login-input {
+	border-radius: 5px;
+	max-width: 200px;
+	display: -webkit-flex;
+  display: -ms-flex;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  margin-left: 150px;
+
 }
+
+
+
+.nav {
+	justify-content: space-around;
+
+}
+
+
+.logout {
+	
+	text-align: center;
+	font-family: 'Roboto Slab', serif;
+
+}
+
 body {
-	background-color: #FFF9FB;
+	background-color: #F4F4F4;
 }
 
 img {
@@ -57,34 +134,66 @@ img {
 	max-height: 100px;
 }
 
-img.game {
-	max-width: 500px;
-	max-height: 500px;
-}
 
-
-.logout {
-font-family: 'Source Sans Pro', sans-serif;
-
-}
 
 p {
 	text-align: center;
 	font-family: 'Source Sans Pro', sans-serif;
-
 }
 
 a {
+
 	text-decoration: none;
-	color: #04471C;
+	color: #000000;
 	text-align: center;
+	font-family: 'Source Sans Pro', sans-serif;
+	justify-content: space-between;
 }
 
+div.teams {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	flex-wrap: wrap;
+}
+
+div.divider {
+	width: 100%;
+	border: 1px solid black;
+}
+
+.form{
+   display: -webkit-flex;
+   display: -ms-flex;
+   display: flex;
+   -webkit-flex-direction: column;
+   -ms-flex-direction: column;
+   flex-direction: column;
+   border-radius: 5px;
+   padding: 40px;
+   max-width: 700px;
+   margin: 0 auto;
+   background-color: #3498db;
+   box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+   background: #04471C;
+   background-image: -webkit-linear-gradient(top, #3cb0fd, #3498db);
+   background-image: -moz-linear-gradient(top, #3cb0fd, #3498db);
+   background-image: -ms-linear-gradient(top, #3cb0fd, #3498db);
+   background-image: -o-linear-gradient(top, #3cb0fd, #3498db);
+   background-image: linear-gradient(to bottom, #3cb0fd, #3498db);
+   text-decoration: none;
+
+ }
 
 
 div.team {
-	max-width: 250px;
-	max-height: 250px;
+
+	margin: 20px;
+	display: flex;
+	flex-direction: column;
+	flex-wrap: wrap;
+	max-width: 300px;
+	max-height: 350px;
   background: #3498db;
   background-image: -webkit-linear-gradient(top, #3498db, #2980b9);
   background-image: -moz-linear-gradient(top, #3498db, #2980b9);
@@ -93,11 +202,11 @@ div.team {
   background-image: linear-gradient(to bottom, #3498db, #2980b9);
   -webkit-border-radius: 28;
   -moz-border-radius: 28;
-  border-radius: 28px;
- font-family: 'Source Sans Pro', sans-serif;
+  border-radius: 20px;
+ 	font-family: 'Source Sans Pro', sans-serif;
   color: black;
-  font-size: 20px;
-  padding: 10px 20px 10px 20px;
+  font-size: 18px;
+  padding: 20px 20px 20px 20px;
   text-decoration: none;
 }
 
@@ -112,12 +221,89 @@ div.team {
 }
 }
 
-span.new-team {
-	color: #000000;
+.team {
+	display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px transparent;
+  position: relative;
+  -webkit-transition-duration: 0.5s;
+  transition-duration: 0.5s;
+  -webkit-transition-property: transform;
+  transition-property: transform;
+}
+
+.team:before {
+	pointer-events: none;
+  position: absolute;
+  z-index: -1;
+  content: '';
+  top: 100%;
+  left: 5%;
+  height: 10px;
+  width: 90%;
+  opacity: 0;
+  background: -webkit-radial-gradient(center, ellipse, rgba(0, 0, 0, 0.35) 0%, transparent 80%);
+  background: radial-gradient(ellipse at center, rgba(0, 0, 0, 0.35) 0%, transparent 80%);
+  /* W3C */
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-property: transform, opacity;
+  transition-property: transform, opacity;
+}
+
+.team:hover, .team:focus, .team:active {
+	-webkit-transform: translateY(-5px);
+  transform: translateY(-5px);
+}
+
+.team:hover:before, .team:focus:before, .team:active:before {
+	-webkit-transform: translateY(-5px);
+  transform: translateY(-5px);
+}
+
+
+div.team-show {
+
+	display: flex;
+	flex-direction: column;
+	flex-wrap: wrap;
+	min-width: 400px;
+	max-height: 550px;
+  background: #3498db;
+  background-image: -webkit-linear-gradient(top, #3498db, #2980b9);
+  background-image: -moz-linear-gradient(top, #3498db, #2980b9);
+  background-image: -ms-linear-gradient(top, #3498db, #2980b9);
+  background-image: -o-linear-gradient(top, #3498db, #2980b9);
+  background-image: linear-gradient(to bottom, #3498db, #2980b9);
+  -webkit-border-radius: 28;
+  -moz-border-radius: 28;
+  border-radius: 20px;
+ 	font-family: 'Source Sans Pro', sans-serif;
+  color: black;
+  font-size: 18px;
+  padding: 20px 20px 20px 20px;
+  text-decoration: none;
+}
+
+ {
+  background: #04471C;
+  background-image: -webkit-linear-gradient(top, #3cb0fd, #3498db);
+  background-image: -moz-linear-gradient(top, #3cb0fd, #3498db);
+  background-image: -ms-linear-gradient(top, #3cb0fd, #3498db);
+  background-image: -o-linear-gradient(top, #3cb0fd, #3498db);
+  background-image: linear-gradient(to bottom, #3cb0fd, #3498db);
+  text-decoration: none;
 }
 
 
 
+div.buttons {
+	display: flex;
+	flex-direction: column;
+	flex-wrap: wrap; 
+}
 
 
 

@@ -14,7 +14,9 @@
 
 
 
-<div class ="team"><h3><%= link_to(team[:team], team_path(team) ) %></h3>
+<div class ="team"><h3>
+	
+	<%= link_to(team[:team], team_path(team) ) %></h3>
 
 <p><%= image_tag team[:flag] %></p>
 <p>Founded: <%=  team[:founded] %></p></div>

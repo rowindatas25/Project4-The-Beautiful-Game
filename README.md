@@ -18,19 +18,31 @@ https://github.com/rowindatas25/Project4-The-Beautiful-Game
 # Technologies Used
 
 Ruby on Rails
+
 This entire app was made in Ruby. There were multiple controllers and models set up, one each for teams, profiles and users.
 Ruby's routes in the backend were quick and the ability to run a for each loop through everything in the views made it easier to style the app.
+
 Javascript
+
 Used javascript with the youtube iFrame they have in order to implenent it by splitting arrays along with some javascript in the views which dictates when a user can see their favorite moment or not based on whether they've input something into their profile. 
+
 HTML
-HTML was used in the views along with the "squid" and "flounder" tags to render data as well as write code within my html files as well. 
+
+HTML was used in the views along with the "squid" and "flounder" tags to render data as well as write code within my html files as well.
+
 Flexbox CSS
+
 Flexbox allowed for the app to display all 98 divs and more by providing a tremendous amount of flexability to the elements on the page. It also made it easier to incorporate the Iframe player from youtube.
 HTTParty
+
 HTTParty was initially used to provide most of the soccer data that I had, it provided the names for all the teams from the five major sports leagues across Europe.
+
 Sports Open Data API
+
 This was the API that provided at least the data of all the team names and some of the dates that they were founded as well as some team colors as well.
+
 Youtube API
+
 Used the youtube API iFrame player to insert a specfic ID into each show page for a specific team with a moment/video from Youtube.
 
 

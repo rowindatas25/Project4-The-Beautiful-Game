@@ -9,8 +9,13 @@ class TeamsController < ApplicationController
 
 	def show 
 		@team = Team.find(params[:id])
+
+		if @team.youtube_id != "" 
 		url = @team.youtube_id
 		@team_url = url.split("/").last.split("=").last
+		else
+			@team_url = ""
+		end
 	end
 
 
@@ -54,7 +59,7 @@ class TeamsController < ApplicationController
 	private
 
 	def team_params
-		params.require(:team).permit(:team, :flag, :founded, :moment_title, :moments)
+		params.require(:team).permit(:team, :flag, :founded, :moment_title, :youtube_id)
 	end
 
 	def set_team

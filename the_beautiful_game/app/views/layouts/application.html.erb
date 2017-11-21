@@ -10,14 +10,27 @@
 
   </head>
 
-	<%=image_tag("The-Beautiful-Game-Logo.png", :class => "style_image")%>
+	<body>
+	
 
-  <body class="logout">
+  <div class="logout">
+
+  	<div class="bg-header">
+		<h1 class="header">The Beautiful Game</h1>
+		<h3 class="header">Joga Bonito</h3>
+
+	</div>
+
   	<div class="nav">
-  	<span class="log-in"><%= link_to("Log In", login_path) %></span><br>
-    <span class="sign-up"><%= link_to("Sign Up", signup_path) %></span><br>
-  	<span class="log-out"><%= link_to("Logout", logout_path, method: "delete") %></span> <br>
+
+  	<span class="log-in"><%= link_to("Log In", login_path) %></span>
+    <span class="sign-up"><%= link_to("Sign Up", signup_path) %></span>
+    <span class="all-teams"><%= link_to 'All Teams',
+		teams_path%></span>
+		<span class="new-team"><%= link_to 'Add Team', new_team_path%></span>
+		<span class="log-out"><%= link_to("Logout", logout_path, method: "delete") %></span> 
   	 </div>
+  	</div>
     <%= yield %>
 
   </body>

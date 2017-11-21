@@ -21,15 +21,73 @@
 @import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro');
 @import url('https://fonts.googleapis.com/css?family=Roboto+Slab');
 
+/*Start of Header css*/
+
 h1 {
 	text-align: center;
-	color: #002B49;
+	color: #ffffff;
 	font-family: 'Roboto Slab', serif;
 }
 
+h1.header, h3.header {
+	color: #ffffff;
+
+}
+
+h2 {
+	text-align: center;
+	font-family: 'Roboto Slab', serif;
+
+}
+
+div.bg-header {
+	width: 100%;
+	height: 100%;
+	background-color: #222222;
+
+
+}
+
+
+body {
+	background-color: #F4F4F4;
+	margin: 0 auto;
+}
+
+.nav {
+	display: flex;
+	justify-content: space-around;
+	flex-direction: row;
+	background-color: #404040;
+
+	
+}
+
+span.sign-up {
+	margin-left: 150px;
+	color: #ffffff;
+}
+
+span.all-teams {
+	margin-left: 119px;
+	color: #ffffff;
+}
+
+span.new-team {
+	margin-left: 100px;
+	color: #ffffff;
+}
+
+span.log-out {
+	margin-left: 150px;
+	color: #ffffff;
+}
+
 h3 {
+	text-align: center;
 	font-size: 25px;
-	color: #002B49;
+	color: #ffffff;
+	font-family: 'Roboto Slab', serif;
 
 }
 
@@ -38,16 +96,22 @@ h3 {
 	
 }
 
-span.new-team, span.all-teams, span.edit-team {
+/*End of Header css*/
+
+
+/*Start of Form CSS*/
+
+div.logout {
 	display: flex;
-	justify-content: center;
-	padding-top: 10px;
-	margin-right: 5px;
+	flex-direction: column;
+	text-align: center;
+	font-family: 'Roboto Slab', serif;
+
 }
 
 
-
 .user-input {
+	text-align: center;
 	border-radius: 5px;
 	max-width: 200px;
 	display: -webkit-flex;
@@ -84,45 +148,8 @@ span.new-team, span.all-teams, span.edit-team {
   background-image: -o-linear-gradient(top, #3cb0fd, #3498db);
   background-image: linear-gradient(to bottom, #3cb0fd, #3498db);
   text-decoration: none;
+  margin-top: 30px;
 }
-		
-.form {
-  display: -webkit-flex;
-  display: -ms-flex;
-  display: flex;
-  justify-content: center;
-  webkit-flex-direction: column;
-  ms-flex-direction: column;
-  flex-direction: column;
-  padding: 40px;
-  min-height: 200px;
-  max-width: 500px;
-  margin: 0 auto;
-  background-color: #3498db;
-  box-shadow: 0pt 2px 5px rgba(105, 108, 109,  0.7),	
-		0px 0px 8px 5px rgba(208, 223, 226, 0.4) outset;
-	border-radius: 5px;
-  background: #04471C;
-  background-image: -webkit-linear-gradient(top, #3cb0fd, #3498db);
-  background-image: -moz-linear-gradient(top, #3cb0fd, #3498db);
-  background-image: -ms-linear-gradient(top, #3cb0fd, #3498db);
-  background-image: -o-linear-gradient(top, #3cb0fd, #3498db);
-  background-image: linear-gradient(to bottom, #3cb0fd, #3498db);
-  text-decoration: none;
- }
-
-.form-input {
-	border-radius: 5px;
-	max-width: 200px;
-	display: -webkit-flex;
-  display: -ms-flex;
-  display: flex;
-  -webkit-flex-direction: column;
-  -ms-flex-direction: column;
-  flex-direction: column;
-  margin-left: 150px;
-}
-
 
 .login-form {
 
@@ -150,6 +177,51 @@ span.new-team, span.all-teams, span.edit-team {
 }
 
 .login-input {
+	text-align: center;
+	border-radius: 10px;
+	max-width: 200px;
+	display: -webkit-flex;
+  display: -ms-flex;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  margin-left: 150px;
+	font-family: 'Roboto Slab', serif;
+}
+
+	
+
+
+		
+.form {
+  display: -webkit-flex;
+  display: -ms-flex;
+  display: flex;
+  justify-content: center;
+  webkit-flex-direction: column;
+  ms-flex-direction: column;
+  flex-direction: column;
+  padding: 40px;
+  min-height: 200px;
+  max-width: 500px;
+  margin: 0 auto;
+  background-color: #3498db;
+  box-shadow: 0pt 2px 5px rgba(105, 108, 109,  0.7),	
+		0px 0px 8px 5px rgba(208, 223, 226, 0.4) outset;
+	border-radius: 5px;
+  background: #04471C;
+  background-image: -webkit-linear-gradient(top, #3cb0fd, #3498db);
+  background-image: -moz-linear-gradient(top, #3cb0fd, #3498db);
+  background-image: -ms-linear-gradient(top, #3cb0fd, #3498db);
+  background-image: -o-linear-gradient(top, #3cb0fd, #3498db);
+  background-image: linear-gradient(to bottom, #3cb0fd, #3498db);
+  text-decoration: none;
+  font-family: 'Roboto Slab', serif;
+ }
+
+.form-input {
+	text-align: center;
 	border-radius: 5px;
 	max-width: 200px;
 	display: -webkit-flex;
@@ -159,78 +231,105 @@ span.new-team, span.all-teams, span.edit-team {
   -ms-flex-direction: column;
   flex-direction: column;
   margin-left: 150px;
-
 }
 
-
-
-.nav {
-	display: flex;
-	justify-content: space-between;
-	flex-direction: row;
-	flex-wrap: wrap;
-	
-}
-
-span.log-in, span.log-out, span.sign-up {
-	margin-left: 145px;
-
-}
-
-
-.logout {
-	
+.form-button {
 	text-align: center;
+	margin-left: 207px;
+}
+
+
+
+
+/*End of Form CSS*/
+
+
+/*Start of button and link css*/
+
+ span.edit-team {
+	display: flex;
+	justify-content: center;
+	padding-top: 10px;
+	margin-right: 5px;
+	text-align: center;
+	color: #222222;
+}
+
+	button, input[type='submit']  {
 	font-family: 'Roboto Slab', serif;
-
+	display: -webkit-flex;
+  display: -ms-flex;
+  display: flex;
+  justify-content: center;
+  webkit-flex-direction: row;
+  ms-flex-direction: row;
+  flex-direction: row;
+  font-size: 11px;
+  padding: 20px;
+  max-width: 150px;
+  max-height: 75px;
+  margin: 0 auto;
+  margin-bottom: 50px;
+  background-color: #3498db;
+  box-shadow: 0pt 2px 5px rgba(105, 108, 109,  0.7),	
+		0px 0px 8px 5px rgba(208, 223, 226, 0.4) outset;
+	border-radius: 5px;
+  background: #04471C;
+  background-image: -webkit-linear-gradient(top, #3cb0fd, #3498db);
+  background-image: -moz-linear-gradient(top, #3cb0fd, #3498db);
+  background-image: -ms-linear-gradient(top, #3cb0fd, #3498db);
+  background-image: -o-linear-gradient(top, #3cb0fd, #3498db);
+  background-image: linear-gradient(to bottom, #3cb0fd, #3498db);
+  text-decoration: none;
 }
 
-body {
-	background-color: #F4F4F4;
+
+div.buttons {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	margin-left: 25px;
+	margin-top: 30px;
 }
+
+
 
 img {
 	max-width: 100px;
 	max-height: 100px;
 }
 
-img.game {
-	max-width: 500px;
-	max-height: 500px;
-}
 
-.style_image {
-	min-width: 500px;
-	max-height: 275px;
-	border-radius: 10px;
-}
 
 p {
 	text-align: center;
 	font-family: 'Roboto Slab', serif;
-	color: #002B49;
+	color: #ffffff;
 
 }
+
 
 a {
 
 	text-decoration: none;
-	color: #002B49;
+	color: #ffffff;
 	text-align: center;
 	font-family: 'Roboto Slab', serif;
 	justify-content: space-between;
 }
+
+
+/*End of button and link css*/
+
+
+/*Start of teams css*/
 
 div.teams {
 	display: flex;
 	flex-direction: row;
 	justify-content: space-around;
 	flex-wrap: wrap;
-}
 
-div.divider {
-	width: 100%;
-	border: 1px solid black;
 }
 
 
@@ -319,7 +418,7 @@ div.team-show {
 	flex-direction: column;
 	flex-wrap: wrap;
 	min-width: 400px;
-	max-height: 750px;
+	max-height: 950px;
   background: #3498db;
   background-image: -webkit-linear-gradient(top, #3498db, #2980b9);
   background-image: -moz-linear-gradient(top, #3498db, #2980b9);
@@ -333,7 +432,7 @@ div.team-show {
   font-size: 18px;
   padding: 20px 20px 20px 20px;
   text-decoration: none;
-  margin-top: 15px;
+  margin-top: 40px;
   margin-left: 10px;
 }
 
@@ -348,14 +447,18 @@ div.team-show {
 }
 
 iframe {
+	margin: 0 auto;
+	padding: 0;
+	border: none;
 	display: flex;
 	flex-wrap: column;
 	flex-wrap: wrap;
-	min-width: 300px;
-	max-height: 300px;
-	margin-left: 50px;
-	padding-top: 50px;
+	padding-top: 20px;
+	
 }
+
+
+
 
 div.profile-index {
 
@@ -363,7 +466,7 @@ div.profile-index {
 	flex-direction: column;
 	flex-wrap: wrap;
 	min-width: 400px;
-	max-height: 550px;
+	max-height: 750px;
   background: #3498db;
   background-image: -webkit-linear-gradient(top, #3498db, #2980b9);
   background-image: -moz-linear-gradient(top, #3498db, #2980b9);
@@ -378,6 +481,7 @@ div.profile-index {
   font-size: 18px;
   padding: 20px 20px 20px 20px;
   text-decoration: none;
+  margin-top: 50px;
 }
 
  {
@@ -393,12 +497,8 @@ div.profile-index {
 }
 
 
+/*End of team and all css*/
 
-div.buttons {
-	display: flex;
-	flex-direction: column;
-	flex-wrap: wrap; 
-}
 
 
 

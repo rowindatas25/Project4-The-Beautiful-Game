@@ -14,12 +14,14 @@ class ProfilesController < ApplicationController
 	def index
 		@user = @current_user.id
 		@profiles = Profile.where(user_id: @user)
+
 	end
 
 
 	def show
 		@user = @current_user.id
 		@profile = Profile.where( user_id: @user, id: params[:id])
+
 	end
 
 	def edit
@@ -36,7 +38,7 @@ class ProfilesController < ApplicationController
 	private
 
 	def profile_params
-		params.require(:profile).permit(:team, :flag, :founded, :moment_title, :moments, :user_id)
+		params.require(:profile).permit(:team, :flag, :founded, :moment_title, :youtube_id, :user_id)
 	end
 
 end

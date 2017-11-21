@@ -1,26 +1,22 @@
 
-
-
-<span class="all-teams"><%= link_to 'All Teams', teams_path%></span>
-
-
-
-<div>
-
 <div class="teams">
   <div class="team-show"><h3><%= @team[:team] %></h3>
  	<h3><%= image_tag @team[:flag]	%></h3>
 	<br>
   <h3> Founded: <%=@team[:founded] %></h3>
   <br>
-	<h3>	Moment Title: <%= @team[:moment_title] %>
+	<% if @team.youtube_id != "" 
+		%>
+		<h3>	Moment Title: <%= @team[:moment_title] %>
 		<br>
-	<h3> Favorite Moment: 
-	<iframe src='https://www.youtube.com/embed/<%= @team_url %>?rel=0&autoplay=<%= params[:autoplay] || 0 %>' frameborder='0' allowfullscreen></iframe>
-</h3>
+		<h3> Favorite Moment: </h3>
+			<iframe class="show" src='https://www.youtube.com/embed/<%= @team_url %>?rel=0&autoplay=<%= params[:autoplay] || 0 %>' frameborder='0' allowfullscreen style = "width: 300px height:120px;"></iframe>
+		<% else %>
+		
+	<% end %>
+
 <br>
 
-</h3>
 
 
 </div>
@@ -28,11 +24,10 @@
 	</div>
 
 	
-
- 
-<p><%= link_to 'Edit Team', edit_team_path %></p>
-
 <div class="buttons">
+<p ><%= button_to 'Edit Team', edit_team_path, :method => 'get' %></p>
+
+
 
  <%= form_for(:profile, url: profiles_path, method: 'post') do |f| %>
     <%= f.hidden_field :team, value: @team[:team] %>
@@ -41,21 +36,13 @@
      <%= f.hidden_field :moment_title, value: @team[:moment_title] %>
        <%= f.hidden_field :youtube_id, value: @team[:youtube_id] %>
       <%= f.hidden_field :user_id, value: @current_user.id %>
-     
-
-
+     <p>
     <%= f.submit "Save Team" %>
+   </p>
+
   <% end %>
-
-
-	
-
-
-
-</div>
-
-
 
 <p><%= button_to 'Delete Team', team_path, :method => 'delete' %></p>
 
 </div>
+ 
